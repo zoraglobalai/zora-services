@@ -23,106 +23,156 @@ export const NON_IT_SERVICE_CATEGORIES: NonITServiceCategory[] = [
         title: "Business Process Optimisation",
         slug: "business-process-optimisation",
         shortDesc:
-          "Streamline workflows, remove bottlenecks, and improve cycle time with measurable outcomes.",
-        tags: ["Process Mapping", "Workflow Automation", "Lean", "ERP Optimisation"],
+          "Reduce operational costs, streamline workflows, and deliver measurable ROI through ERP and automation.",
+        tags: ["ERP", "Workflow Automation", "Process Mapping", "ROI"],
       },
       {
         title: "Operational Efficiency Consulting",
         slug: "operational-efficiency-consulting",
         shortDesc:
-          "Improve productivity, resource utilization, and operational visibility across teams.",
-        tags: ["KPI Design", "Resource Optimisation", "Risk Reduction", "Benchmarking"],
+          "Eliminate inefficiencies, maximize productivity, and implement KPI-driven improvements across operations.",
+        tags: ["Process Optimization", "Cost Reduction", "KPIs", "Dashboards"],
       },
       {
         title: "Digital Transformation Consulting",
         slug: "digital-transformation-consulting",
         shortDesc:
-          "Plan and execute digital change initiatives across people, process, and technology.",
-        tags: ["Roadmapping", "Technology Assessment", "Change Management", "Digitisation"],
+          "Modernize processes and technology ecosystems through strategy, cloud, automation, data, and AI initiatives.",
+        tags: ["Roadmap", "Cloud", "Automation", "Governance"],
       },
     ],
   },
+
+  // ✅ NEW CATEGORY (for your “Non-IT Staff Augmentation” page)
+  {
+    title: "Staff Augmentation & Workforce Solutions",
+    slug: "staff-augmentation-workforce-solutions",
+    desc: "Flexible staffing solutions to help businesses scale non-IT teams quickly with qualified professionals.",
+    items: [
+      {
+        title: "Non-IT Staff Augmentation",
+        slug: "non-it-staff-augmentation",
+        shortDesc:
+          "Talent acquisition, manpower services, operational staffing, administrative staffing, and customer support hiring.",
+        tags: ["Recruitment", "Deployment", "Workforce", "Payroll Support"],
+      },
+    ],
+  },
+
   {
     title: "Branding & Creative Services",
     slug: "branding-creative-services",
     desc: "Brand identity systems and creative execution that elevate market presence.",
     items: [
       {
-        title: "Brand Identity & Positioning",
+        title: "Brand Identity Design",
         slug: "brand-identity-positioning",
         shortDesc:
-          "Define brand voice, tone, and visual system for consistent recognition and trust.",
-        tags: ["Brand Strategy", "Logo System", "Guidelines", "Messaging"],
+          "Create distinctive and consistent brand identities with strategy, visual design, and scalable guidelines.",
+        tags: ["Logo", "Brand Strategy", "Guidelines", "Messaging"],
       },
       {
-        title: "UI/UX & Creative Design",
+        title: "UI/UX Design Services",
         slug: "ui-ux-creative-design",
         shortDesc:
-          "Modern UI/UX design for websites, apps, and product experiences.",
-        tags: ["User Research", "Wireframes", "Prototypes", "Design Systems"],
+          "User-focused digital experiences that improve usability, engagement, conversions, and brand perception.",
+        tags: ["User Research", "Interface Design", "Usability Testing", "Prototypes"],
+      },
+      // ✅ NEW ITEMS (based on your content)
+      {
+        title: "Creative Assets & Marketing Design",
+        slug: "creative-assets-marketing-design",
+        shortDesc:
+          "High-quality creative assets for marketing, branding, UI visuals, and multimedia designs.",
+        tags: ["Creatives", "UI Assets", "Illustrations", "Multimedia"],
       },
       {
-        title: "Content & Presentation Studio",
-        slug: "content-presentation-studio",
+        title: "Website & Corporate Content",
+        slug: "website-corporate-content",
         shortDesc:
-          "High-impact content, decks, and marketing assets built for conversion and clarity.",
-        tags: ["Pitch Decks", "Case Studies", "Copywriting", "Visual Storytelling"],
+          "SEO-optimized, brand-aligned website content that ranks higher and converts visitors into customers.",
+        tags: ["Copywriting", "SEO", "Blogs", "Landing Pages"],
+      },
+      {
+        title: "Content Management Support",
+        slug: "content-management-support",
+        shortDesc:
+          "End-to-end content management services to organize, publish, maintain, and optimize digital content.",
+        tags: ["Publishing", "Maintenance", "Governance", "Optimization"],
       },
     ],
   },
+
   {
     title: "Accounting & Financial Operations",
     slug: "accounting-financial-operations",
     desc: "Reliable financial operations support to improve accuracy, compliance, and reporting.",
     items: [
+      // ✅ Updated to match your content
       {
-        title: "Bookkeeping & Monthly Close",
-        slug: "bookkeeping-monthly-close",
+        title: "Accounting Management",
+        slug: "accounting-management",
         shortDesc:
-          "Clean books, structured close process, and consistent monthly reporting.",
-        tags: ["Ledger", "Reconciliation", "Close Process", "Reporting"],
+          "End-to-end accounting management: books, compliance, financial reporting, and audit-ready accuracy.",
+        tags: ["Bookkeeping", "Compliance", "Reporting", "Ledger"],
       },
       {
-        title: "Payroll & Compliance Support",
-        slug: "payroll-compliance-support",
+        title: "Bookkeeping & Ledger Handling",
+        slug: "bookkeeping-ledger-handling",
         shortDesc:
-          "Support payroll operations with compliance readiness and process discipline.",
-        tags: ["Payroll Ops", "Compliance", "Documentation", "Controls"],
+          "Daily transaction recording, ledger maintenance, reconciliations, and structured accounting records.",
+        tags: ["Journal Entries", "General Ledger", "Reconciliation", "Standards"],
       },
       {
-        title: "Financial Planning & Analysis",
-        slug: "financial-planning-analysis",
+        title: "Financial Reporting",
+        slug: "financial-reporting",
         shortDesc:
-          "Budgeting, forecasting, and KPI dashboards to guide smarter decisions.",
-        tags: ["Budgeting", "Forecasting", "Dashboards", "KPIs"],
+          "Balance sheets, income statements, cash flow statements, compliance reporting, and analysis insights.",
+        tags: ["Statements", "Compliance", "Analysis", "GAAP/IFRS"],
+      },
+      {
+        title: "Financial Operations Support",
+        slug: "financial-operations-support",
+        shortDesc:
+          "Billing, e-invoicing, invoice processing, accounts payable, and receivable workflows for healthy cash flow.",
+        tags: ["Billing", "AP", "AR", "Reconciliation"],
       },
     ],
   },
+
   {
     title: "Digital Marketing Services",
     slug: "digital-marketing-services",
     desc: "Performance-driven marketing systems engineered for growth and measurable ROI.",
     items: [
       {
-        title: "SEO & Content Growth",
+        title: "SEO Services",
         slug: "seo-content-growth",
         shortDesc:
-          "Technical SEO + content strategy to grow organic visibility and qualified leads.",
-        tags: ["Technical SEO", "Content Strategy", "On-page", "Analytics"],
+          "Technical SEO, on-page optimization, content strategy, and ongoing SEO management for sustainable rankings.",
+        tags: ["Technical SEO", "On-page", "Keywords", "Growth"],
       },
       {
-        title: "Performance Marketing",
+        title: "Performance Marketing (Google & Meta Ads)",
         slug: "performance-marketing",
         shortDesc:
-          "Paid ads and funnel optimization for lead generation and conversion improvements.",
-        tags: ["Google Ads", "Meta Ads", "Landing Pages", "Conversion"],
+          "Google Ads + Meta Ads campaigns to generate leads, increase conversions, and maximize ROI.",
+        tags: ["Google Ads", "Meta Ads", "ROAS", "Funnels"],
       },
       {
-        title: "Social Media & Branding",
+        title: "Social Media Management",
         slug: "social-media-branding",
         shortDesc:
-          "Consistent social presence with campaign planning and creative execution.",
-        tags: ["Content Calendar", "Creative", "Community", "Campaigns"],
+          "End-to-end social media management: strategy, content creation, scheduling, engagement, and analytics.",
+        tags: ["Strategy", "Content", "Community", "Analytics"],
+      },
+      // ✅ NEW ITEM (your “Lead Generation Campaigns” content)
+      {
+        title: "Lead Generation Campaigns",
+        slug: "lead-generation-campaigns",
+        shortDesc:
+          "Strategy-led experience approach to drive better product journeys, clarity, and conversion-ready design direction.",
+        tags: ["Strategy", "UX", "Design Systems", "Execution"],
       },
     ],
   },

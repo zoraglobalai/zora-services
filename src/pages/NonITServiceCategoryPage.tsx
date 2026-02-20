@@ -18,7 +18,11 @@ const NonITServiceCategoryPage: React.FC = () => {
     if (!category) return null;
     const initial = category.items?.[0]?.slug ?? "";
     const slugToUse = activeSlug || initial;
-    return category.items.find((i) => i.slug === slugToUse) ?? category.items[0] ?? null;
+    return (
+      category.items.find((i) => i.slug === slugToUse) ??
+      category.items[0] ??
+      null
+    );
   }, [category, activeSlug]);
 
   if (!category) return <Navigate to="/services/non-it" replace />;
@@ -40,7 +44,10 @@ const NonITServiceCategoryPage: React.FC = () => {
               Services
             </Link>
             <span className="mx-2">/</span>
-            <Link to="/services/non-it" className="hover:text-purple-300 transition">
+            <Link
+              to="/services/non-it"
+              className="hover:text-purple-300 transition"
+            >
               Non-IT Services
             </Link>
             <span className="mx-2">/</span>
@@ -86,7 +93,13 @@ const NonITServiceCategoryPage: React.FC = () => {
                       ].join(" ")}
                     >
                       <div className="font-semibold">{item.title}</div>
-                      <div className={isActive ? "text-[#0b1220]/80 mt-1 text-sm" : "text-gray-400 mt-1 text-sm"}>
+                      <div
+                        className={
+                          isActive
+                            ? "text-[#0b1220]/80 mt-1 text-sm"
+                            : "text-gray-400 mt-1 text-sm"
+                        }
+                      >
                         {item.shortDesc}
                       </div>
                     </button>
@@ -129,7 +142,9 @@ const NonITServiceCategoryPage: React.FC = () => {
                   <button
                     onClick={() =>
                       activeItem &&
-                      navigate(`/services/non-it/${category.slug}/${activeItem.slug}`)
+                      navigate(
+                        `/services/non-it/${category.slug}/${activeItem.slug}`
+                      )
                     }
                     className="px-8 py-4 rounded-2xl font-semibold bg-blue-600 hover:bg-blue-700 transition shadow-[0_0_40px_rgba(37,99,235,0.35)]"
                   >
@@ -155,11 +170,14 @@ const NonITServiceCategoryPage: React.FC = () => {
 
             {/* Extra section */}
             <div className="mt-10 rounded-3xl bg-white/5 border border-white/10 p-8">
-              <h3 className="text-xl font-bold text-purple-200">How this page works</h3>
+              <h3 className="text-xl font-bold text-purple-200">
+                How this page works
+              </h3>
               <p className="text-gray-400 mt-3 leading-relaxed">
                 Select a service on the left to preview details here. Click{" "}
-                <span className="text-gray-200 font-semibold">View Service</span> to open the
-                dedicated detailed page (long content + contact form).
+                <span className="text-gray-200 font-semibold">View Service</span>{" "}
+                to open the dedicated detailed page (long content + contact
+                form).
               </p>
             </div>
           </main>

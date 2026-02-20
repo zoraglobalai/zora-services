@@ -1,4 +1,4 @@
-// src/App.tsx  (ONLY the Non-IT routes + imports you must add/replace)
+// src/App.tsx
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -11,14 +11,17 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 
+/* ================= IT SERVICES ================= */
 import ITServices from "./pages/ITServices";
 import ITServiceCategoryPage from "./pages/ITServiceCategoryPage";
 import ITServiceItemPage from "./pages/ITServiceItemPage";
 
+/* ================= NON-IT SERVICES ================= */
 import NonITServices from "./pages/NonITServices";
-import NonITServiceCategoryPage from "./pages/NonITServiceCategoryPage"; // ✅ ADD
-import NonITServiceItemPage from "./pages/NonITServiceItemPage"; // ✅ ADD
+import NonITServiceCategoryPage from "./pages/NonITServiceCategoryPage";
+import NonITServiceItemPage from "./pages/NonITServiceItemPage";
 
+/* ================= OTHER PAGES ================= */
 import Products from "./pages/Products";
 import BookAppointment from "./pages/BookAppointment";
 
@@ -26,29 +29,50 @@ const App: React.FC = () => {
   return (
     <Router>
       <div className="bg-[#0b0618] text-white min-h-screen flex flex-col">
+        {/* NAVBAR */}
         <Navbar />
 
+        {/* MAIN CONTENT */}
         <main className="flex-grow">
           <Routes>
+            {/* ---------- MAIN PAGES ---------- */}
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
 
-            {/* IT */}
+            {/* ---------- IT SERVICES FLOW ---------- */}
             <Route path="/services/it" element={<ITServices />} />
-            <Route path="/services/it/:categorySlug" element={<ITServiceCategoryPage />} />
-            <Route path="/services/it/:categorySlug/:itemSlug" element={<ITServiceItemPage />} />
+            <Route
+              path="/services/it/:categorySlug"
+              element={<ITServiceCategoryPage />}
+            />
+            <Route
+              path="/services/it/:categorySlug/:itemSlug"
+              element={<ITServiceItemPage />}
+            />
 
-            {/* ✅ NON-IT (SAME FLOW AS IT) */}
+            {/* ---------- NON-IT SERVICES FLOW ---------- */}
             <Route path="/services/non-it" element={<NonITServices />} />
-            <Route path="/services/non-it/:categorySlug" element={<NonITServiceCategoryPage />} />
-            <Route path="/services/non-it/:categorySlug/:itemSlug" element={<NonITServiceItemPage />} />
 
+            {/* Category Page */}
+            <Route
+              path="/services/non-it/:categorySlug"
+              element={<NonITServiceCategoryPage />}
+            />
+
+            {/* Service Detail Page */}
+            <Route
+              path="/services/non-it/:categorySlug/:itemSlug"
+              element={<NonITServiceItemPage />}
+            />
+
+            {/* ---------- OTHER ---------- */}
             <Route path="/products" element={<Products />} />
             <Route path="/book-appointment" element={<BookAppointment />} />
           </Routes>
         </main>
 
+        {/* FOOTER + GLOBAL COMPONENTS */}
         <Footer />
         <Chatbot />
         <CookieNotice />

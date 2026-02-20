@@ -1,5 +1,4 @@
 // src/pages/NonITServices.tsx
-
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -24,6 +23,13 @@ const services = [
     title: "Digital Marketing Services",
     desc: "Performance-driven digital marketing and growth strategies.",
     slug: "digital-marketing-services",
+  },
+
+  // ✅ Optional: if you want a separate card for staff augmentation on landing
+  {
+    title: "Staff Augmentation & Workforce Solutions",
+    desc: "Flexible staffing solutions to help businesses scale non-IT teams quickly with qualified professionals.",
+    slug: "staff-augmentation-workforce-solutions",
   },
 ];
 
@@ -83,7 +89,7 @@ const NonITServices: React.FC = () => {
                     {service.desc}
                   </p>
 
-                  {/* FIXED View More Button */}
+                  {/* View More Button */}
                   <div className="mt-10">
                     <Link
                       to={`/services/non-it/${service.slug}`}
@@ -93,7 +99,7 @@ const NonITServices: React.FC = () => {
                     </Link>
                   </div>
 
-                  {/* Animated Energy Line */}
+                  {/* Energy Line */}
                   <div className="mt-10 h-[2px] w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 relative overflow-hidden">
                     <div className="absolute inset-0 bg-white opacity-20 animate-pulse"></div>
                   </div>

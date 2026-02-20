@@ -144,7 +144,9 @@ const NonITServiceItemPage: React.FC = () => {
           </div>
 
           {/* Framework (optional) */}
-          {(content?.frameworkTitle || content?.beforePoints || content?.afterPoints) && (
+          {(content?.frameworkTitle ||
+            content?.beforePoints ||
+            content?.afterPoints) && (
             <div className="rounded-3xl bg-white/5 border border-white/10 p-10">
               <h2 className="text-2xl md:text-3xl font-bold text-purple-300">
                 {content?.frameworkTitle ?? "Framework"}
@@ -171,7 +173,9 @@ const NonITServiceItemPage: React.FC = () => {
                     <div className="text-sm uppercase tracking-widest text-gray-200/80">
                       Transformation
                     </div>
-                    <div className="mt-2 text-xl font-bold">Strategy • Technology • Operations</div>
+                    <div className="mt-2 text-xl font-bold">
+                      Strategy • Technology • Operations
+                    </div>
                     <div className="text-gray-200/80 mt-2">
                       Governance + measurable KPIs
                     </div>
@@ -221,7 +225,8 @@ const NonITServiceItemPage: React.FC = () => {
               {content?.contactTitle ?? "Tell us about your project"}
             </h2>
             <p className="text-gray-400 mt-3">
-              {content?.contactSubtitle ?? "Share your requirements and our team will reach out."}
+              {content?.contactSubtitle ??
+                "Share your requirements and our team will reach out."}
             </p>
 
             <form onSubmit={onSubmit} className="mt-8 grid md:grid-cols-2 gap-6">
@@ -229,7 +234,9 @@ const NonITServiceItemPage: React.FC = () => {
                 <label className="text-sm text-gray-300">Your name*</label>
                 <input
                   value={form.name}
-                  onChange={(e) => setForm((p) => ({ ...p, name: e.target.value }))}
+                  onChange={(e) =>
+                    setForm((p) => ({ ...p, name: e.target.value }))
+                  }
                   required
                   className="mt-2 w-full px-4 py-3 rounded-xl bg-[#0b1220] border border-white/10 outline-none focus:border-purple-400"
                 />
@@ -240,7 +247,9 @@ const NonITServiceItemPage: React.FC = () => {
                 <input
                   type="email"
                   value={form.email}
-                  onChange={(e) => setForm((p) => ({ ...p, email: e.target.value }))}
+                  onChange={(e) =>
+                    setForm((p) => ({ ...p, email: e.target.value }))
+                  }
                   required
                   className="mt-2 w-full px-4 py-3 rounded-xl bg-[#0b1220] border border-white/10 outline-none focus:border-purple-400"
                 />
@@ -248,11 +257,14 @@ const NonITServiceItemPage: React.FC = () => {
 
               <div className="md:col-span-2">
                 <label className="text-sm text-gray-300">
-                  {content?.messageLabel ?? "Tell us about your requirements..."}
+                  {content?.messageLabel ??
+                    "Tell us about your requirements..."}
                 </label>
                 <textarea
                   value={form.message}
-                  onChange={(e) => setForm((p) => ({ ...p, message: e.target.value }))}
+                  onChange={(e) =>
+                    setForm((p) => ({ ...p, message: e.target.value }))
+                  }
                   rows={5}
                   className="mt-2 w-full px-4 py-3 rounded-xl bg-[#0b1220] border border-white/10 outline-none focus:border-purple-400"
                 />
