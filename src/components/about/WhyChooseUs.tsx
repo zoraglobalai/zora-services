@@ -48,17 +48,8 @@ const WhyChooseUs: React.FC = () => {
         <div className="relative">
           {/* Header */}
           <div className="text-center mb-10 md:mb-12">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight leading-tight break-words">
-              <span className="text-white">Why Choose </span>
-              <span
-                className="bg-clip-text text-transparent"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(90deg, #2aedf3 0%, #7d4596 55%, #7c3aed 100%)",
-                }}
-              >
-                Zora Global AI
-              </span>
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif font-black tracking-tight leading-tight break-words bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent">
+              Why Choose Zora Global AI
             </h2>
 
             <p className="mt-5 md:mt-6 text-white/75 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed px-1">
@@ -106,10 +97,7 @@ const WhyChooseUs: React.FC = () => {
                 />
 
                 <div className="relative bg-[#0f0b1d]/55 border border-white/10 backdrop-blur-xl rounded-[28px] p-7 sm:p-8 transform group-hover:-translate-y-2 transition duration-500 overflow-hidden">
-                  <h3
-                    className="text-lg sm:text-xl font-extrabold"
-                    style={{ color: "#e9d7ff" }}
-                  >
+                  <h3 className="text-lg sm:text-xl font-serif font-extrabold bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent">
                     {item.title}
                   </h3>
 
@@ -132,7 +120,7 @@ const WhyChooseUs: React.FC = () => {
           {/* CTA */}
           <div className="mt-10 md:mt-12 flex flex-col md:flex-row items-center justify-between gap-6 bg-white/5 border border-white/10 rounded-3xl p-6 md:p-8">
             <div className="text-center md:text-left">
-              <h3 className="text-xl sm:text-2xl font-bold text-white/90">
+              <h3 className="text-xl sm:text-2xl font-serif font-bold bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent">
                 Ready to accelerate your transformation?
               </h3>
               <p className="text-white/75 mt-2">
@@ -151,17 +139,17 @@ const WhyChooseUs: React.FC = () => {
                     className="absolute inset-0 blur-lg opacity-60 group-hover:opacity-100 transition"
                     style={{
                       backgroundImage:
-                        "linear-gradient(90deg, rgba(42,237,243,0.85), rgba(125,69,150,0.85), rgba(124,58,237,0.85))",
+                        "linear-gradient(90deg, rgba(147,51,234,0.9), rgba(124,58,237,0.9), rgba(109,40,217,0.9))",
                     }}
                   />
                   <span
                     className="absolute inset-0 rounded-2xl"
                     style={{
                       backgroundImage:
-                        "linear-gradient(90deg, #2aedf3 0%, #7d4596 55%, #7c3aed 100%)",
+                        "linear-gradient(90deg, #9333ea 0%, #7c3aed 55%, #6d28d9 100%)",
                     }}
                   />
-                  <span className="relative z-10 text-[#140a28]">
+                  <span className="relative z-10 text-white">
                     Explore Services
                   </span>
                 </Link>

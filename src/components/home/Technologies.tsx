@@ -1,13 +1,15 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import awsImage from "../../assets/amazonwebservice.png";
+import azureImage from "../../assets/microsoftazure.png";
+import gcpImage from "../../assets/googlecloudplatform.png";
+import firebaseImage from "../../assets/firebase.png";
 
 const TECH_STACK = [
-  "Amazon Web Services (AWS)",
-  "Microsoft Azure",
-  "Google Cloud Platform (GCP)",
-  "Kubernetes",
-  "Firebase",
-  "Zora Global AI Intelligence Platform",
+  { name: "Amazon Web Services", image: awsImage },
+  { name: "Microsoft Azure", image: azureImage },
+  { name: "Google Cloud Platform", image: gcpImage },
+  { name: "Firebase", image: firebaseImage },
 ];
 
 const Technologies: React.FC = () => {
@@ -25,8 +27,11 @@ const Technologies: React.FC = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative py-28 px-6 border-b border-blue-900/40 overflow-hidden isolate"
+      className="relative py-28 px-6 overflow-hidden isolate"
     >
+      <div className="pointer-events-none absolute inset-x-0 top-0 z-[5] h-16 bg-gradient-to-b from-[#020010] to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[5] h-16 bg-gradient-to-t from-[#020010] to-transparent" />
+
       {/* Background Image */}
       <motion.div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat will-change-transform"
@@ -67,7 +72,7 @@ const Technologies: React.FC = () => {
       {/* CONTENT */}
       <div className="relative z-10 max-w-7xl mx-auto text-center">
         {/* ✅ CHANGED TO WHITE */}
-        <h2 className="text-4xl font-bold text-white mb-6 drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
+        <h2 className="text-4xl font-serif font-bold text-white mb-6 drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
           Built on a Foundation of Trusted Technologies
         </h2>
 
@@ -76,38 +81,48 @@ const Technologies: React.FC = () => {
           excellence.
         </p>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
           {TECH_STACK.map((tool) => (
             <div
-              key={tool}
+              key={tool.name}
               className="
-                group relative
-                rounded-2xl
-                border border-blue-900/40
-                bg-[#0b1220]/55
-                backdrop-blur-2xl
-                px-6 py-7
-                shadow-[0_18px_40px_rgba(0,0,0,0.45)]
-                hover:border-[#2aedf3]/50
-                hover:bg-[#0b1220]/62
+                group relative isolate
+                rounded-[26px]
+                h-[260px] sm:h-[300px]
+                p-0
+                flex flex-col
+                hover:-translate-y-1
                 transition-all duration-300
+                max-w-[280px] sm:max-w-[300px]
+                mx-auto
+                w-full
               "
             >
+              <div className="relative z-10 flex h-full flex-col overflow-hidden rounded-[26px] border border-indigo-300/20">
+                <div className="relative h-[180px] sm:h-[210px]">
+                  <div
+                    className="absolute inset-0 bg-cover bg-center opacity-60 transition-all duration-500 group-hover:opacity-80 group-hover:scale-[1.06]"
+                    style={{ backgroundImage: `url('${tool.image}')` }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#020010]/72 via-[#0a041f]/56 to-[#08031a]/45" />
+                  <div className="pointer-events-none absolute -inset-y-10 -left-1/2 w-1/2 rotate-12 bg-gradient-to-r from-transparent via-white/35 to-transparent opacity-0 transition-all duration-700 group-hover:left-[120%] group-hover:opacity-100" />
+                </div>
+
+                <div className="relative -mt-px flex h-[80px] sm:h-[90px] items-center justify-center border-t border-indigo-300/25 bg-[#070b18]/65 px-4 text-center backdrop-blur-md">
+                  <p className="text-lg sm:text-xl text-indigo-100 font-serif font-semibold tracking-wide leading-snug transition-all duration-300 group-hover:text-violet-100 group-hover:drop-shadow-[0_0_16px_rgba(196,181,253,0.65)]">
+                    {tool.name}
+                  </p>
+                </div>
+              </div>
               <div
-                className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                className="pointer-events-none absolute inset-0 rounded-[34px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 style={{
                   boxShadow:
-                    "0 0 0 1px rgba(42,237,243,0.20), 0 0 50px rgba(125,69,150,0.18)",
+                    "0 0 0 1px rgba(99,102,241,0.30), 0 0 60px rgba(79,70,229,0.28)",
                 }}
               />
-
-              <p className="relative text-blue-100 font-semibold tracking-wide">
-                {tool}
-              </p>
-
-              <p className="relative mt-2 text-xs text-gray-200/70">
-                Secure • Scalable • Modern
-              </p>
+              <div className="pointer-events-none absolute inset-x-8 bottom-0 h-px bg-gradient-to-r from-transparent via-indigo-300/80 to-transparent scale-x-0 transition-transform duration-500 group-hover:scale-x-100" />
+              <div className="pointer-events-none absolute -inset-3 rounded-[30px] opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-100" style={{ background: "radial-gradient(circle at 50% 35%, rgba(129,140,248,0.24), transparent 65%)" }} />
             </div>
           ))}
         </div>

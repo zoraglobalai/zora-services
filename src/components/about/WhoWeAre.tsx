@@ -20,16 +20,8 @@ const WhoWeAre: React.FC = () => {
       <div className="relative bg-[#121026]/70 backdrop-blur-3xl border border-white/10 rounded-[40px] p-16 shadow-[0_0_70px_rgba(125,69,150,0.18)]">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="space-y-6">
-            <h2 className="text-5xl font-bold">
-              <span
-                className="bg-clip-text text-transparent"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(90deg, #2aedf3 0%, #7d4596 70%, #7c3aed 100%)",
-                }}
-              >
-                Who We Are
-              </span>
+            <h2 className="text-5xl font-serif font-bold bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent">
+              Who We Are
             </h2>
 
             <p className="text-white/80 text-lg leading-relaxed">

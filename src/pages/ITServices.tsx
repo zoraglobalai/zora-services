@@ -29,7 +29,7 @@ const ITServices: React.FC = () => {
   const [activeSlug, setActiveSlug] = useState<string | null>(null);
 
   return (
-    <section className="relative min-h-screen bg-[#050816] text-white overflow-hidden pt-28 pb-24 px-6">
+    <section className="relative min-h-screen bg-[#050816] text-white overflow-hidden pt-28 pb-24 px-4 sm:px-6 lg:px-0">
       {/* Background */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute -top-60 -left-60 w-[800px] h-[800px] bg-[#7d4596]/30 blur-[180px] rounded-full" />
@@ -42,7 +42,7 @@ const ITServices: React.FC = () => {
         />
       </div>
 
-      <div className="max-w-7xl mx-auto">
+      <div className="w-full mx-auto">
         {/* Header */}
         <div className="text-center mb-14">
           <h1 className="text-5xl md:text-6xl font-extrabold">

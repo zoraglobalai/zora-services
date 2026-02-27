@@ -1,12 +1,15 @@
 // src/components/home/GlobalImpact.tsx
 import React from "react";
+import Counter from "./Counter";
 
 const GlobalImpact: React.FC = () => {
   const impactMetrics = [
-    { id: 1, number: "120+", label: "Clients Worldwide", icon: "👥" },
-    { id: 2, number: "3+", label: "Years of Innovation", icon: "🏛️" },
-    { id: 3, number: "80+", label: "Projects Successfully Delivered", icon: "📘" },
-    { id: 4, number: "25+", label: "Global Strategic Collaborations", icon: "🌐" },
+    { id: 1, target: 850, suffix: "+", label: "Projects Delivered" },
+    { id: 2, target: 900, suffix: "+", label: "Clients" },
+    { id: 3, target: 45, suffix: "+", label: "Countries" },
+    { id: 4, target: 2015, suffix: "", label: "Established" },
+    { id: 5, target: 11, suffix: "+", label: "Years of Excellence" },
+    { id: 6, target: 20, suffix: "+", label: "Ongoing Projects" },
   ];
 
   const valuePoints = [
@@ -18,7 +21,7 @@ const GlobalImpact: React.FC = () => {
   return (
     <section
       className="
-        relative bg-[#020010] text-white overflow-hidden isolate
+        relative bg-transparent text-white overflow-hidden isolate
         mt-0
         pt-2 sm:pt-4 md:pt-6
         pb-20 sm:pb-24 md:pb-28
@@ -26,9 +29,9 @@ const GlobalImpact: React.FC = () => {
     >
       {/* ================= BACKGROUND (CLIPPED + SAFE) ================= */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(67,56,202,0.35),transparent_50%),radial-gradient(circle_at_80%_80%,rgba(124,58,237,0.3),transparent_50%)]" />
-        <div className="absolute -top-32 -left-32 w-[520px] h-[520px] bg-indigo-700/30 rounded-full blur-[140px]" />
-        <div className="absolute bottom-0 right-0 w-[520px] h-[520px] bg-purple-800/30 rounded-full blur-[140px]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(67,56,202,0.18),transparent_58%),radial-gradient(circle_at_80%_80%,rgba(124,58,237,0.16),transparent_58%)]" />
+        <div className="absolute -top-32 -left-32 w-[520px] h-[520px] bg-indigo-700/14 rounded-full blur-[140px]" />
+        <div className="absolute bottom-0 right-0 w-[520px] h-[520px] bg-purple-800/14 rounded-full blur-[140px]" />
       </div>
 
       {/* ================= CONTENT ================= */}
@@ -43,29 +46,30 @@ const GlobalImpact: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-14 items-start">
           {/* ================= LEFT ================= */}
           <div className="text-center lg:text-left">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight leading-tight">
-              <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-600 bg-clip-text text-transparent">
-                Intelligent Digital Transformation
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-tight">
+              <span className="font-serif text-white text-[1.08em]">Intelligent Digital </span>
+              <span className="font-serif bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-600 bg-clip-text text-transparent">
+                Transformation
               </span>
             </h2>
 
-            <p className="mt-6 text-gray-300 text-base sm:text-lg leading-relaxed">
+            <p className="mt-5 sm:mt-6 text-justify text-gray-300 text-sm sm:text-lg leading-relaxed">
               Zora Global Technologies Pvt Ltd delivers AI-driven software,
               enterprise platforms, and scalable digital transformation solutions
               powered by intelligent automation frameworks enabling rapid enterprise
               innovation.
             </p>
 
-            <p className="mt-4 text-gray-200 text-base sm:text-lg leading-relaxed font-semibold">
+            <p className="mt-4 text-justify text-gray-200 text-sm sm:text-lg leading-relaxed font-semibold">
               Zora Global AI Technologies provides{" "}
               <span className="text-white font-extrabold">48+ services</span> within{" "}
               <span className="text-white font-extrabold">48 hours</span> using{" "}
               <span className="text-white font-extrabold">AI automation</span>.
             </p>
 
-            <div className="mt-7 space-y-4">
+            <div className="mt-6 sm:mt-7 space-y-3 sm:space-y-4">
               {valuePoints.map((text, idx) => (
-                <p key={idx} className="text-gray-300 text-base leading-relaxed">
+                <p key={idx} className="text-justify text-gray-300 text-sm sm:text-base leading-relaxed">
                   {text}
                 </p>
               ))}
@@ -74,83 +78,21 @@ const GlobalImpact: React.FC = () => {
 
           {/* ================= RIGHT ================= */}
           <div className="flex flex-col gap-6">
-            {/* ✅ More Manovate-like spacing */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-3 sm:gap-5">
               {impactMetrics.map((metric) => (
                 <div key={metric.id} className="relative group">
-                  <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl blur-lg opacity-20 group-hover:opacity-35 transition" />
-
-                  {/* ✅ BOX SIZE ADJUSTED LIKE IMAGE (TALLER + AIRY) */}
-                  <div
-                    className="
-                      relative bg-white/95 text-slate-900 border border-white/60
-                      rounded-2xl
-                      p-7 sm:p-8
-                      min-h-[220px] sm:min-h-[240px]
-                      flex flex-col
-                      shadow-[0_12px_35px_rgba(0,0,0,0.3)]
-                    "
-                  >
-                    {/* ✅ Bigger icon box */}
-                    <div className="w-14 h-14 rounded-2xl bg-blue-600/10 border border-blue-600/15 flex items-center justify-center text-2xl">
-                      {metric.icon}
-                    </div>
-
-                    {/* ✅ Number placement like image */}
-                    <p className="mt-7 text-4xl font-black text-slate-900 leading-none">
-                      {metric.number}
+                  <div className="relative overflow-hidden rounded-2xl p-4 sm:p-6 min-h-[120px] sm:min-h-[145px] flex flex-col items-center justify-center text-center border border-blue-900/40 bg-[#0e1626]/70 backdrop-blur-sm transition-all duration-300 transform-gpu group-hover:border-[#2aedf3]/55 group-hover:-translate-y-1 group-hover:shadow-[0_16px_34px_rgba(42,237,243,0.18)]">
+                    <span className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-white/10 via-white/0 to-cyan-200/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    <span className="pointer-events-none absolute -left-16 top-0 h-full w-14 -skew-x-12 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 transition-all duration-700 group-hover:left-[120%] group-hover:opacity-100" />
+                    <p className="relative text-3xl sm:text-4xl font-black text-blue-100 leading-none transition duration-300 group-hover:text-cyan-100">
+                      <Counter target={metric.target} suffix={metric.suffix} startFrom={1} />
                     </p>
-
-                    {/* ✅ Label spacing like image */}
-                    <h3 className="mt-3 text-base font-medium text-slate-600 leading-snug">
+                    <h3 className="relative mt-2 text-sm sm:text-base font-semibold text-blue-100/90 leading-snug transition duration-300 group-hover:text-cyan-100">
                       {metric.label}
                     </h3>
                   </div>
                 </div>
               ))}
-            </div>
-
-            {/* GRAPH CARD (kept same design, just spacing consistent) */}
-            <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-700 rounded-xl blur-lg opacity-25 group-hover:opacity-40 transition" />
-
-              <div className="relative bg-white/95 text-slate-900 border border-white/60 rounded-xl p-5 sm:p-6 shadow-[0_12px_35px_rgba(0,0,0,0.3)] overflow-hidden">
-                <h3 className="text-base sm:text-lg font-extrabold">
-                  Average Client Growth
-                </h3>
-
-                <div className="mt-3 inline-flex px-4 py-1.5 rounded-xl font-black text-white text-lg bg-gradient-to-b from-blue-600 to-blue-700">
-                  3×
-                </div>
-
-                <div className="relative mt-5">
-                  <svg className="w-full h-[95px] sm:h-[110px]" viewBox="0 0 640 240" fill="none">
-                    <defs>
-                      <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stopColor="#2563eb" stopOpacity="0.28" />
-                        <stop offset="100%" stopColor="#2563eb" stopOpacity="0" />
-                      </linearGradient>
-                    </defs>
-
-                    <path
-                      d="M70 165 L165 140 L255 155 L355 115 L455 130 L565 60 L565 220 L70 220 Z"
-                      fill="url(#areaFill)"
-                    />
-                    <path
-                      d="M70 165 L165 140 L255 155 L355 115 L455 130 L565 60"
-                      stroke="#2563eb"
-                      strokeWidth="7"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-
-                  <p className="mt-3 text-slate-600 text-xs sm:text-sm">
-                    Typical outcomes within{" "}
-                    <span className="font-semibold text-slate-900">12–18 months</span>
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
           {/* end right */}

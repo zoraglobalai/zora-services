@@ -6,8 +6,8 @@ const Leadership: React.FC = () => {
   return (
     <div className="mt-20 max-w-6xl mx-auto">
       <div className="text-center mb-16">
-        <h2 className="text-5xl font-bold">
-          Meet Our <span className="text-purple-400">Leadership</span>
+        <h2 className="text-5xl font-serif font-bold bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent">
+          Meet Our Leadership
         </h2>
 
         <p className="text-purple-200 mt-4 max-w-2xl mx-auto">
@@ -35,7 +35,7 @@ const Leadership: React.FC = () => {
               />
             </div>
 
-            <h3 className="text-2xl font-bold">Dr. Adv. S. Ansar Ali
+            <h3 className="text-2xl font-serif font-bold bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent">Dr. Adv. S. Ansar Ali
 Managing Director | Corporate & Legal Advisor</h3>
             <p className="text-purple-400 mb-4">Managing Director</p>
 
@@ -91,7 +91,7 @@ Managing Director | Corporate & Legal Advisor</h3>
               />
             </div>
 
-            <h3 className="text-2xl font-bold">ASHIK ALI S</h3>
+            <h3 className="text-2xl font-serif font-bold bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent">ASHIK ALI S</h3>
             <p className="text-purple-400 mb-4">Chief Executive Officer</p>
 
             <p className="text-purple-200 text-sm leading-relaxed">

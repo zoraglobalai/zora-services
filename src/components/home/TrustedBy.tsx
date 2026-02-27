@@ -24,68 +24,35 @@ const TRUSTED_BY = [
 
 const TrustedBy: React.FC = () => {
   const items = [...TRUSTED_BY, ...TRUSTED_BY];
+  const itemsRowTwo = [...TRUSTED_BY.slice(8), ...TRUSTED_BY.slice(0, 8), ...TRUSTED_BY.slice(8), ...TRUSTED_BY.slice(0, 8)];
 
   return (
-    <section className="relative py-12 sm:py-14 px-6 border-b border-blue-900/40 overflow-hidden isolate">
-      {/* ✅ Background Image */}
-      <div
-        className="absolute inset-0 z-0 bg-center bg-cover bg-no-repeat"
-        style={{ backgroundImage: "url('/backgrounds/trusted-bg.png')" }}
-      />
-
-      {/* ✅ Lighter dark overlay */}
-      <div className="absolute inset-0 z-[1] bg-[#020010]/45" />
-
-      {/* ✅ Highlight boost */}
-      <div
-        className="absolute inset-0 z-[2] pointer-events-none mix-blend-screen opacity-65"
-        style={{
-          background:
-            "radial-gradient(circle at 55% 45%, rgba(255,255,255,0.18), transparent 55%)",
-        }}
-      />
-
-      {/* ✅ Brand tint overlay */}
-      <div
-        className="absolute inset-0 z-[3] pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(circle at 22% 20%, rgba(125,69,150,0.45), transparent 55%)," +
-            "radial-gradient(circle at 85% 72%, rgba(42,237,243,0.35), transparent 60%)," +
-            "linear-gradient(to bottom, rgba(2,0,16,0.10), rgba(2,0,16,0.45))",
-        }}
-      />
-
-      {/* ✅ Small blur */}
-      <div className="absolute inset-0 z-[4] pointer-events-none backdrop-blur-[0.6px]" />
+    <section className="relative py-16 sm:py-20 overflow-hidden isolate bg-transparent">
+      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_45%,rgba(67,56,202,0.16),transparent_58%),radial-gradient(circle_at_80%_75%,rgba(124,58,237,0.14),transparent_58%)]" />
+        <div className="absolute -top-24 -left-24 w-[420px] h-[420px] bg-indigo-700/12 rounded-full blur-[130px]" />
+        <div className="absolute -bottom-28 right-0 w-[420px] h-[420px] bg-purple-800/12 rounded-full blur-[130px]" />
+      </div>
 
       {/* ✅ Content */}
-      <div className="max-w-7xl mx-auto text-center relative z-10">
-        <h2 className="text-3xl sm:text-4xl font-bold text-purple-400 mb-3">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <h2 className="text-4xl sm:text-5xl font-serif font-bold text-purple-400 mb-10">
           Trusted By Forward-Thinking Enterprises
         </h2>
 
-        <p className="text-gray-200/85 max-w-3xl mx-auto mb-9 leading-relaxed">
+        <p className="text-gray-200/85 max-w-3xl mx-auto mb-9 leading-snug font-serif text-lg sm:text-xl">
           Teams that value reliability, security, and scalable engineering choose
           us to build systems that grow with their business.
         </p>
 
-        <div
-          className="relative overflow-hidden"
-          style={{
-            WebkitMaskImage:
-              "linear-gradient(to right, transparent, black 12%, black 88%, transparent)",
-            maskImage:
-              "linear-gradient(to right, transparent, black 12%, black 88%, transparent)",
-          }}
-        >
-          <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#020010] to-transparent z-10" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#020010] to-transparent z-10" />
+        <div className="relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)] [-webkit-mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)] lg:[mask-image:none] lg:[-webkit-mask-image:none]">
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#010409] to-transparent z-10 lg:hidden" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#010409] to-transparent z-10 lg:hidden" />
 
           <div
             className="
-              flex w-max gap-3 px-6
-              [animation:zora-marquee_30s_linear_infinite]
+              flex w-max gap-8 lg:gap-12 px-0
+              [animation:zora-marquee-left_45s_linear_infinite]
               hover:[animation-play-state:paused]
             "
           >
@@ -93,11 +60,36 @@ const TrustedBy: React.FC = () => {
               <div
                 key={`${item}-${idx}`}
                 className="
-                  px-5 py-3 rounded-full
+                  px-6 py-3.5 lg:px-9 lg:py-5 rounded-full
                   border border-blue-900/40
                   bg-[#0e1626]/70
                   text-blue-100
-                  font-semibold text-sm tracking-wide
+                  font-semibold text-base lg:text-lg tracking-wide
+                  whitespace-nowrap
+                  hover:border-[#2aedf3]/55
+                  transition-colors duration-300
+                "
+              >
+                {item}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="relative mt-8 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)] [-webkit-mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)] lg:[mask-image:none] lg:[-webkit-mask-image:none]">
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#010409] to-transparent z-10 lg:hidden" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#010409] to-transparent z-10 lg:hidden" />
+
+          <div className="flex w-max gap-8 lg:gap-12 px-0 [animation:zora-marquee-right_50s_linear_infinite] hover:[animation-play-state:paused]">
+            {itemsRowTwo.map((item, idx) => (
+              <div
+                key={`${item}-row2-${idx}`}
+                className="
+                  px-6 py-3.5 lg:px-9 lg:py-5 rounded-full
+                  border border-blue-900/40
+                  bg-[#0e1626]/70
+                  text-blue-100
+                  font-semibold text-base lg:text-lg tracking-wide
                   whitespace-nowrap
                   hover:border-[#2aedf3]/55
                   transition-colors duration-300
@@ -109,6 +101,16 @@ const TrustedBy: React.FC = () => {
           </div>
         </div>
       </div>
+      <style>{`
+        @keyframes zora-marquee-left {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        @keyframes zora-marquee-right {
+          0% { transform: translateX(-50%); }
+          100% { transform: translateX(0); }
+        }
+      `}</style>
     </section>
   );
 };

@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import {
   Hero,
   EnterpriseDifferentiators,
+  ClientLogos,
   TrustedBy,
   Industries,
   Technologies,
@@ -56,17 +57,16 @@ const Home: React.FC = () => {
       <div className="relative z-10 flex flex-col">
         <Hero />
         <GlobalImpact />
-        <EnterpriseDifferentiators />
-        <TrustedBy />
-
+        <ClientLogos />
+        <Industries />
         {/* Core Services wrapper */}
         <div className="relative z-20">
           <CoreServices />
         </div>
-
-        <Industries />
-        <Technologies />
+        <TrustedBy />
         <ImpactMetrics />
+        <Technologies />
+        <EnterpriseDifferentiators />
         <Cta />
       </div>
     </main>

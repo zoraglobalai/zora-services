@@ -19,16 +19,8 @@ const OurCulture: React.FC = () => {
       </div>
 
       <div className="text-center mb-14">
-        <h2 className="text-5xl font-bold">
-          <span
-            className="bg-clip-text text-transparent"
-            style={{
-              backgroundImage:
-                "linear-gradient(90deg, #2aedf3 0%, #7d4596 70%, #7c3aed 100%)",
-            }}
-          >
-            Our Culture
-          </span>
+        <h2 className="text-5xl font-serif font-bold bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent">
+          Our Culture
         </h2>
 
         <p className="text-white/75 mt-6 max-w-3xl mx-auto leading-relaxed">
@@ -85,10 +77,7 @@ const OurCulture: React.FC = () => {
                 />
               </div>
 
-              <h3
-                className="relative text-xl font-extrabold"
-                style={{ color: "#e9d7ff" }}
-              >
+              <h3 className="relative text-xl font-serif font-extrabold bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent">
                 {item.title}
               </h3>
 

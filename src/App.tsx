@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Chatbot from "./components/Chatbot";
 import CookieNotice from "./components/CookieNotice";
 import ScrollToTop from "./components/ScrollToTop";
 import RouteTitle from "./components/RouteTitle";
@@ -80,7 +79,6 @@ const App: React.FC = () => {
 
         {/* FOOTER + GLOBAL COMPONENTS */}
         <Footer />
-        <Chatbot />
         <CookieNotice />
       </div>
     </Router>

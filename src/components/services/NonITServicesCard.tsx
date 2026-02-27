@@ -44,7 +44,7 @@ const NonITServicesCard: React.FC = () => {
 
             <Link
               to="/services/non-it"
-              className="inline-block mt-8 sm:mt-10 px-10 sm:px-12 py-4 rounded-2xl font-semibold bg-gradient-to-r from-purple-700 to-blue-700 hover:scale-105 transition duration-300 shadow-[0_0_30px_rgba(124,58,237,0.8)]"
+              className="inline-block mt-8 sm:mt-10 px-10 sm:px-12 py-4 rounded-2xl font-semibold bg-gradient-to-r from-purple-600 to-violet-700 hover:scale-105 transition duration-300 shadow-[0_0_30px_rgba(124,58,237,0.8)]"
             >
               Explore Non-IT Services
             </Link>

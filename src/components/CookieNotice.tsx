@@ -10,9 +10,13 @@ interface CookieNoticeProps {
 const CookieNotice: React.FC<CookieNoticeProps> = ({ onAccept }) => {
   const [visible, setVisible] = useState(false);
 
-  // 🔥 TEMPORARY TEST MODE (Always Show)
   useEffect(() => {
-    setVisible(true);
+    try {
+      const saved = localStorage.getItem(COOKIE_KEY);
+      setVisible(!saved);
+    } catch {
+      setVisible(true);
+    }
   }, []);
 
   const handleAccept = () => {

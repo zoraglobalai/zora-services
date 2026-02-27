@@ -103,8 +103,8 @@ const ContactPage: React.FC = () => {
             </span>
           </motion.div>
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-6">
-            <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
+          <h1 className="mb-6 font-serif font-extrabold text-4xl md:text-6xl lg:text-7xl leading-[1.08] tracking-tight">
+            <span className="bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent [text-shadow:0_0_30px_rgba(168,85,247,0.25)]">
               Contact Us
             </span>
           </h1>

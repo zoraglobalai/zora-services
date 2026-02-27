@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 
 const Cta: React.FC = () => {
   return (
-    <section className="relative py-28 px-6 text-center overflow-hidden isolate border-b border-blue-900/40">
+    <section className="relative py-28 px-6 text-center overflow-hidden isolate">
+      <div className="pointer-events-none absolute inset-x-0 top-0 z-[5] h-16 bg-gradient-to-b from-[#020010] to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[5] h-16 bg-gradient-to-t from-[#020010] to-transparent" />
+
       {/* ✅ Background Image */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
@@ -40,7 +43,7 @@ const Cta: React.FC = () => {
 
       {/* ✅ Content */}
       <div className="relative z-10 max-w-4xl mx-auto">
-        <h2 className="text-4xl md:text-6xl font-extrabold text-purple-300 mb-6 drop-shadow-[0_10px_35px_rgba(0,0,0,0.6)]">
+        <h2 className="text-4xl md:text-6xl font-serif font-extrabold text-purple-300 mb-6 drop-shadow-[0_10px_35px_rgba(0,0,0,0.6)]">
           Ready to Build Your Competitive Edge?
         </h2>
 

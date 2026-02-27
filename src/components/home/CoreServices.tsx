@@ -173,14 +173,14 @@ const CoreServices: React.FC = () => {
         sectionRef.current = el;
       }}
       className="
-        relative bg-[#020010] text-white overflow-hidden w-full
+        relative bg-transparent text-white overflow-hidden w-full
         py-16 sm:py-24
       "
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <div className="max-w-[92rem] mx-auto px-2 sm:px-4">
         {/* HEADER */}
         <div className="mb-8 sm:mb-12">
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-center">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-serif font-black text-center">
             <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-600 bg-clip-text text-transparent">
               IT Services &amp; Solutions
             </span>
@@ -214,9 +214,9 @@ const CoreServices: React.FC = () => {
               className="
                 flex gap-4 sm:gap-6
                 overflow-x-auto scroll-smooth no-scrollbar
-                pl-10 pr-10
-                sm:pl-16 sm:pr-16
-                md:pl-20 md:pr-24
+                pl-4 pr-4
+                sm:pl-8 sm:pr-8
+                md:pl-10 md:pr-10
               "
             >
               {services.map((service) => {

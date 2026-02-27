@@ -4,33 +4,36 @@ import { useInView } from "framer-motion";
 interface CounterProps {
   target: number;
   suffix?: string;
+  startFrom?: number;
 }
 
-const Counter: React.FC<CounterProps> = ({ target, suffix = "" }) => {
+const Counter: React.FC<CounterProps> = ({ target, suffix = "", startFrom = 0 }) => {
   const ref = useRef<HTMLSpanElement | null>(null);
   const isInView = useInView(ref, { once: true });
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(startFrom);
 
   useEffect(() => {
     if (!isInView) return;
 
     const duration = 2000;
     const startTime = performance.now();
+    let animationId = 0;
 
     const animate = (currentTime: number) => {
       const elapsed = currentTime - startTime;
       const progress = Math.min(elapsed / duration, 1);
 
-      const value = progress * target;
+      const value = startFrom + progress * (target - startFrom);
       setCount(value);
 
       if (progress < 1) {
-        requestAnimationFrame(animate);
+        animationId = requestAnimationFrame(animate);
       }
     };
 
-    requestAnimationFrame(animate);
-  }, [isInView, target]);
+    animationId = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(animationId);
+  }, [isInView, startFrom, target]);
 
   return (
     <span ref={ref}>

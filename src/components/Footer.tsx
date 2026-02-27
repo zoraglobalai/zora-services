@@ -9,7 +9,6 @@ import {
 } from "react-icons/fa";
 
 const Footer: React.FC = () => {
-  const MAP_LINK = "https://maps.app.goo.gl/277Smp18y4DsdMzz6?g_st=aw";
   const MAP_QUERY = "Zora Global AI Technologies Chennai";
 
   const LINKEDIN_URL =
@@ -61,15 +60,6 @@ const Footer: React.FC = () => {
                 <span>{PHONE}</span>
               </a>
 
-              <a
-                href={MAP_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-gray-400 hover:text-purple-400 transition underline underline-offset-4"
-              >
-                View Location on Google Maps
-              </a>
-
               {/* ✅ Social icons (all clickable) */}
               <div className="flex items-center gap-4 pt-2">
                 <a
@@ -118,7 +108,7 @@ const Footer: React.FC = () => {
           {/* ================================================= */}
           {/* 2️⃣ Links Wrapper (NOW SPANS 2 COLUMNS ✅) */}
           {/* ================================================= */}
-          <div className="grid grid-cols-2 gap-10 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-3">
+          <div className="grid grid-cols-3 gap-6 sm:gap-8 lg:col-span-2 lg:grid-cols-3">
             {/* Company */}
             <div>
               <h3 className="text-lg font-semibold text-white mb-4">Company</h3>
@@ -151,41 +141,8 @@ const Footer: React.FC = () => {
               </ul>
             </div>
 
-            {/* Solutions */}
-            <div>
-              <h3 className="text-lg font-semibold text-white mb-4">
-                Solutions
-              </h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link
-                    to="/services/it"
-                    className="hover:text-purple-400 transition"
-                  >
-                    IT Services
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/services/non-it"
-                    className="hover:text-purple-400 transition"
-                  >
-                    Non-IT Services
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/book-appointment"
-                    className="hover:text-purple-400 transition"
-                  >
-                    Book Appointment
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
             {/* Products */}
-            <div className="col-span-2 lg:col-span-1">
+            <div className="text-center lg:text-left">
               <h3 className="text-lg font-semibold text-white mb-4">Products</h3>
               <ul className="space-y-2 text-sm">
                 {/* Keep your existing internal product routes as-is */}
@@ -223,6 +180,39 @@ const Footer: React.FC = () => {
                 </li>
               </ul>
             </div>
+
+            {/* Solutions */}
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-4">
+                Solutions
+              </h3>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <Link
+                    to="/services/it"
+                    className="hover:text-purple-400 transition"
+                  >
+                    IT Services
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/services/non-it"
+                    className="hover:text-purple-400 transition"
+                  >
+                    Non-IT Services
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/book-appointment"
+                    className="hover:text-purple-400 transition"
+                  >
+                    Book Appointment
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
 
           {/* ================================================= */}
@@ -246,14 +236,6 @@ const Footer: React.FC = () => {
               Zora Global AI Technologies, Chennai
             </p>
 
-            <a
-              href={MAP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2 inline-flex items-center gap-2 text-sm text-purple-400 hover:text-purple-300 transition"
-            >
-              View on Google Maps ➜
-            </a>
           </div>
         </div>
       </div>
