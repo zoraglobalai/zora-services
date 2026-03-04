@@ -23,7 +23,7 @@ const EnterpriseDifferentiators: React.FC = () => {
     {
       title: "Data-Driven Decision Intelligence",
       desc: "Real-time insights and predictive analytics that improve strategic and operational outcomes.",
-      image: "/it-hero/a12.jpg",
+      image: "/it-hero/ml.jpg",
       tag: "Insights",
     },
   ];
