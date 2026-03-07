@@ -72,8 +72,12 @@ const Technologies: React.FC = () => {
       {/* CONTENT */}
       <div className="relative z-10 max-w-7xl mx-auto text-center">
         {/* ✅ CHANGED TO WHITE */}
-        <h2 className="text-4xl font-serif font-bold text-white mb-6 drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
-          Built on a Foundation of Trusted Technologies
+        <h2 className="text-[clamp(1.2rem,6vw,1.65rem)] sm:text-4xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
+          <span className="block sm:hidden">
+            <span className="block whitespace-nowrap">Built on a Foundation</span>
+            <span className="block whitespace-nowrap">of Trusted Technologies</span>
+          </span>
+          <span className="hidden sm:inline">Built on a Foundation of Trusted Technologies</span>
         </h2>
 
         <p className="text-gray-200/90 max-w-3xl mx-auto mb-12 leading-relaxed">

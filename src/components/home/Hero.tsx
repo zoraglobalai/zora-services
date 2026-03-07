@@ -161,7 +161,7 @@ const Hero: React.FC = () => {
             animate={isMobile ? { opacity: 1, y: [0, -4, 0] } : { opacity: 1, y: 0 }}
             transition={
               isMobile
-                ? { delay: 0.42, duration: 0.9 }
+                ? { delay: 0.42, duration: 1.8, repeat: Infinity, repeatType: "loop", ease: "easeInOut" }
                 : { delay: 0.42, duration: 0.8 }
             }
             className="mt-6 sm:mt-10"
@@ -170,8 +170,8 @@ const Hero: React.FC = () => {
               to="/book-appointment"
               onClick={handleRipple}
               className="
-                group relative inline-flex w-full sm:w-auto min-h-[56px] items-center justify-center
-                overflow-hidden rounded-xl px-8 py-4
+                group hero-mobile-cta relative inline-flex sm:w-auto min-h-[40px] sm:min-h-[56px] items-center justify-center
+                overflow-hidden rounded-xl px-3 sm:px-8 py-3 sm:py-4
                 bg-gradient-to-r from-blue-500/85 via-indigo-500/75 to-purple-600/80
                 font-sans font-semibold text-white
                 border border-white/25 backdrop-blur-md
@@ -192,7 +192,7 @@ const Hero: React.FC = () => {
                   style={{ left: ripple.x, top: ripple.y }}
                 />
               ))}
-              <span className="relative z-10">Start Strategic Discussion</span>
+              <span className="relative z-10 text-lg sm:text-xl font-bold">Start Discussion</span>
             </Link>
           </motion.div>
         </div>
@@ -230,6 +230,14 @@ const Hero: React.FC = () => {
           from { transform: translate(-50%, -50%) scale(1); opacity: 0.45; }
           to { transform: translate(-50%, -50%) scale(24); opacity: 0; }
         }
+        @keyframes heroMobileCtaPulse {
+          0%, 100% {
+            box-shadow: 0 14px 38px rgba(64,24,110,0.55), 0 0 18px rgba(168,85,247,0.22), inset 0 1px 0 rgba(255,255,255,0.35);
+          }
+          50% {
+            box-shadow: 0 16px 42px rgba(64,24,110,0.58), 0 0 28px rgba(168,85,247,0.4), inset 0 1px 0 rgba(255,255,255,0.42);
+          }
+        }
         @media (max-width: 639px) {
           .hero-bg-shift,
           .hero-radial-drift,
@@ -237,11 +245,15 @@ const Hero: React.FC = () => {
             animation-duration: 0.01ms;
             animation-iteration-count: 1;
           }
+          .hero-mobile-cta {
+            animation: heroMobileCtaPulse 2.4s ease-in-out infinite;
+          }
         }
         @media (prefers-reduced-motion: reduce) {
           .hero-bg-shift,
           .hero-radial-drift,
-          .hero-orb {
+          .hero-orb,
+          .hero-mobile-cta {
             animation: none !important;
           }
         }
