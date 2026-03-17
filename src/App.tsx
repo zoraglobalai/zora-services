@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
@@ -7,25 +7,25 @@ import CookieNotice from "./components/CookieNotice";
 import ScrollToTop from "./components/ScrollToTop";
 
 /* ================= MAIN PAGES ================= */
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import ContactPage from "./pages/ContactPage";
-import BookAppointment from "./pages/BookAppointment";
+const Home = lazy(() => import("./pages/Home"));
+const About = lazy(() => import("./pages/About"));
+const Services = lazy(() => import("./pages/Services"));
+const ContactPage = lazy(() => import("./pages/ContactPage"));
+const BookAppointment = lazy(() => import("./pages/BookAppointment"));
 
 /* ================= BLOG ================= */
-import Blog from "./pages/Blog";
-import BlogPost from "./pages/BlogPost";
+const Blog = lazy(() => import("./pages/Blog"));
+const BlogPost = lazy(() => import("./pages/BlogPost"));
 
 /* ================= IT SERVICES ================= */
-import ITServices from "./pages/ITServices";
-import ITServiceCategoryPage from "./pages/ITServiceCategoryPage";
-import ITServiceItemPage from "./pages/ITServiceItemPage";
+const ITServices = lazy(() => import("./pages/ITServices"));
+const ITServiceCategoryPage = lazy(() => import("./pages/ITServiceCategoryPage"));
+const ITServiceItemPage = lazy(() => import("./pages/ITServiceItemPage"));
 
 /* ================= NON-IT SERVICES ================= */
-import NonITServices from "./pages/NonITServices";
-import NonITServiceCategoryPage from "./pages/NonITServiceCategoryPage";
-import NonITServiceItemPage from "./pages/NonITServiceItemPage";
+const NonITServices = lazy(() => import("./pages/NonITServices"));
+const NonITServiceCategoryPage = lazy(() => import("./pages/NonITServiceCategoryPage"));
+const NonITServiceItemPage = lazy(() => import("./pages/NonITServiceItemPage"));
 
 const App: React.FC = () => {
   return (
@@ -40,6 +40,7 @@ const App: React.FC = () => {
 
         {/* MAIN CONTENT */}
         <main className="flex-grow">
+          <Suspense fallback={null}>
           <Routes>
 
             {/* ---------- MAIN PAGES ---------- */}
@@ -78,6 +79,7 @@ const App: React.FC = () => {
             <Route path="/book-appointment" element={<BookAppointment />} />
 
           </Routes>
+          </Suspense>
         </main>
 
         {/* FOOTER + GLOBAL COMPONENTS */}
