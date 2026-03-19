@@ -19,6 +19,7 @@ const NonITServiceItemPage: React.FC = () => {
   const seoTitle = item ? `${item.title} | Zora Global AI` : "Business Services | Zora Global AI";
   const seoDescription = item?.shortDesc ?? "Professional business solutions delivered by Zora Global AI.";
   const seoCanonical = `/services/non-it/${categorySlug}/${itemSlug}`;
+  const fullCanonical = `https://www.zoraglobalai.com${seoCanonical}`;
 
   return (
     <>
@@ -26,6 +27,7 @@ const NonITServiceItemPage: React.FC = () => {
         title={seoTitle}
         description={seoDescription}
         canonical={seoCanonical}
+        serviceSchema={item ? { name: item.title, description: item.shortDesc, url: fullCanonical } : undefined}
       />
       <BreadcrumbSchema
         crumbs={[
