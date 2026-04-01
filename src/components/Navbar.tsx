@@ -1,6 +1,7 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
+import zoraLogo from "../assets/zora-logo-redesign.png";
 
 const Navbar: React.FC = () => {
   const location = useLocation();
@@ -129,9 +130,9 @@ const Navbar: React.FC = () => {
           }}
         >
           <img
-            src="/logo.png"
+            src={zoraLogo}
             alt="ZoraGlobalAI"
-            className="h-10 md:h-12 w-auto object-contain"
+            className="h-12 md:h-14 w-auto object-contain"
           />
         </Link>
 
@@ -229,7 +230,7 @@ const Navbar: React.FC = () => {
 
           <Link
             to="/book-appointment"
-            className="bg-violet-500 text-white px-4 py-2 rounded-lg transition-all duration-300"
+            className="bg-violet-500 text-white px-4 py-2 rounded-lg text-sm font-bold transition-all duration-300"
           >
             Book Appointment
           </Link>
@@ -272,7 +273,7 @@ const Navbar: React.FC = () => {
 
             <Link
               to="/book-appointment"
-              className="block bg-violet-500 text-white px-4 py-3 rounded-lg text-center"
+              className="block bg-violet-500 text-white px-4 py-3 rounded-lg text-center text-base font-semibold"
             >
               Book Appointment
             </Link>

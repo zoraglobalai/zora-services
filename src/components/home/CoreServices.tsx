@@ -180,10 +180,8 @@ const CoreServices: React.FC = () => {
       <div className="max-w-[92rem] mx-auto px-2 sm:px-4">
         {/* HEADER */}
         <div className="mb-8 sm:mb-12">
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-serif font-black text-center">
-            <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-600 bg-clip-text text-transparent">
-              IT Services &amp; Solutions
-            </span>
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-serif font-black text-center bg-gradient-to-r from-[#8b5cf6] via-[#6366f1] to-[#38bdf8] bg-clip-text text-transparent drop-shadow-[0_0_18px_rgba(56,189,248,0.32)]">
+            IT Services &amp; Solutions
           </h2>
         </div>
 

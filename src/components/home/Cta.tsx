@@ -48,8 +48,8 @@ const Cta: React.FC = () => {
         </h2>
 
         <p className="text-gray-200/90 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Tailored to your data. Enterprise-grade security. Measurable ROI from
-          day one.
+          Tailored to your data - Enterprise-grade security - Measurable ROI from
+          day one
         </p>
 
         {/* ✅ BUTTON WITH WHITE OUTER BORDER */}

@@ -10,8 +10,8 @@ const ITServices: React.FC = () => {
     "website-web-application-services": "/it-hero/website.jpg",
     "mobile-application-development": "/it-hero/android.jpg",
     "ai-automation-solutions": "/it-hero/aiot.jpg",
-    "custom-enterprise-software-development": "/it-hero/crm.jpg",
-    "cloud-infrastructure-managed-services": "/it-hero/cloud-architecture.jpg",
+    "custom-enterprise-software": "/it-hero/custom-software.jpg",
+    "cloud-infrastructure-services": "/it-hero/infrastructure.jpg",
     "cybersecurity-solutions": "/it-hero/data-protection.jpg",
     "staff-augmentation-it-consulting": "/it-hero/integrations.jpg",
   };

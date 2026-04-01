@@ -4,25 +4,25 @@ const EnterpriseDifferentiators: React.FC = () => {
   const differentiators = [
     {
       title: "Board-Level AI Strategy",
-      desc: "We align artificial intelligence initiatives with executive business outcomes.",
+      desc: "We align artificial intelligence initiatives with executive business outcomes",
       image: "/it-hero/aiot.jpg",
       tag: "Strategy",
     },
     {
       title: "Security-First Architecture",
-      desc: "Built with enterprise-grade compliance, data encryption, and infrastructure resilience.",
+      desc: "Built with enterprise-grade compliance, data encryption and infrastructure resilience",
       image: "/it-hero/data-protection.jpg",
       tag: "Security",
     },
     {
       title: "Scalable AI Infrastructure",
-      desc: "Cloud-native, modular systems designed for long-term digital growth.",
+      desc: "Cloud-native, modular systems designed for long-term digital growth",
       image: "/it-hero/cloud-architecture.jpg",
       tag: "Scalability",
     },
     {
       title: "Data-Driven Decision Intelligence",
-      desc: "Real-time insights and predictive analytics that improve strategic and operational outcomes.",
+      desc: "Real-time insights and predictive analytics that improve strategic and operational outcomes",
       image: "/it-hero/ml.jpg",
       tag: "Insights",
     },
@@ -60,7 +60,7 @@ const EnterpriseDifferentiators: React.FC = () => {
 
         <motion.h2
           variants={itemVariants}
-          className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-5"
+          className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#8b5cf6] via-[#6366f1] to-[#38bdf8] bg-clip-text text-transparent drop-shadow-[0_0_18px_rgba(56,189,248,0.32)] mb-4 sm:mb-5"
         >
           Why Enterprises Choose Us
         </motion.h2>
@@ -68,7 +68,7 @@ const EnterpriseDifferentiators: React.FC = () => {
           variants={itemVariants}
           className="max-w-3xl mx-auto text-purple-100/80 text-sm sm:text-lg leading-relaxed mb-10 sm:mb-14 px-1"
         >
-          Built for high-stakes environments where reliability, security, and long-term scalability are non-negotiable.
+          Built for high-stakes environments where reliability, security and long-term scalability are non-negotiable
         </motion.p>
 
         <div className="relative mt-2 sm:mt-4 max-w-5xl mx-auto">

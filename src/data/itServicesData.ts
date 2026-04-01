@@ -18,12 +18,12 @@ export const IT_SERVICE_CATEGORIES: ServiceCategory[] = [
   {
     slug: "website-web-application-services",
     title: "Website & Web Application Services",
-    desc: "Scalable, secure, and high-performance web solutions tailored to modern business needs.",
+    desc: "Scalable, secure and high-performance web solutions tailored to modern business needs.",
     items: [
       {
         slug: "website-design-development",
         title: "Website Design & Development",
-        description: "Modern, responsive, and SEO-optimized websites built for growth.",
+        description: "Modern, responsive and SEO-optimized websites built for growth.",
         features: [
           "UI/UX Design",
           "Responsive Development",
@@ -74,7 +74,7 @@ export const IT_SERVICE_CATEGORIES: ServiceCategory[] = [
   {
     slug: "mobile-application-development",
     title: "Mobile Application Development",
-    desc: "High-performance mobile applications for Android, iOS, and cross-platform environments.",
+    desc: "High-performance mobile applications for Android, iOS and cross-platform environments.",
     items: [
       {
         slug: "android-app-development",
@@ -244,7 +244,7 @@ export const IT_SERVICE_CATEGORIES: ServiceCategory[] = [
   {
     slug: "cloud-infrastructure-services",
     title: "Cloud & Infrastructure Services",
-    desc: "Secure, scalable, and cost-optimized cloud solutions.",
+    desc: "Secure, scalable and cost-optimized cloud solutions.",
     items: [
       {
         slug: "cloud-migration-services",

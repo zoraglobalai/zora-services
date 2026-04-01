@@ -82,7 +82,7 @@ const Technologies: React.FC = () => {
 
         <p className="text-gray-200/90 max-w-3xl mx-auto mb-12 leading-relaxed">
           Built on a foundation of trusted technologies and modern engineering
-          excellence.
+          excellence
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">

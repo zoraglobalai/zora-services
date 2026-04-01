@@ -5,32 +5,32 @@ const Industries: React.FC = () => {
     {
       step: "01",
       title: "Banking & Financial Services",
-      desc: "Secure digital products and workflow automation.",
+      desc: "Secure digital products and workflow automation",
     },
     {
       step: "02",
       title: "Healthcare & Life Sciences",
-      desc: "Compliant platforms and patient-centered experiences.",
+      desc: "Compliant platforms and patient-centered experiences",
     },
     {
       step: "03",
       title: "Manufacturing & Supply Chain",
-      desc: "Operational visibility and process optimization.",
+      desc: "Operational visibility and process optimization",
     },
     {
       step: "04",
       title: "Retail & E-Commerce",
-      desc: "Conversion-focused commerce and customer journeys.",
+      desc: "Conversion-focused commerce and customer journeys",
     },
     {
       step: "05",
       title: "Telecommunications",
-      desc: "Scalable systems for service delivery and support.",
+      desc: "Scalable systems for service delivery and support",
     },
     {
       step: "06",
       title: "Enterprise SaaS",
-      desc: "Reliable multi-tenant products built for growth.",
+      desc: "Reliable multi-tenant products built for growth",
     },
   ];
 
@@ -63,15 +63,15 @@ const Industries: React.FC = () => {
             </span>
           </motion.div>
 
-          <motion.h2 variants={itemVariants} className="text-4xl md:text-6xl font-serif font-bold mb-6 text-white">
-            Industries We{" "}
-            <span className="bg-gradient-to-r from-purple-300 via-purple-400 to-purple-600 bg-clip-text text-transparent">
-              Serve
-            </span>
+          <motion.h2
+            variants={itemVariants}
+            className="text-4xl md:text-6xl font-serif font-bold mb-6 bg-gradient-to-r from-[#8b5cf6] via-[#6366f1] to-[#38bdf8] bg-clip-text text-transparent drop-shadow-[0_0_18px_rgba(56,189,248,0.32)]"
+          >
+            Industries We Serve
           </motion.h2>
 
           <motion.p variants={itemVariants} className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Focused domain expertise and AI-first execution across high-impact sectors.
+            Focused domain expertise and AI-first execution across high-impact sectors
           </motion.p>
         </motion.div>
 

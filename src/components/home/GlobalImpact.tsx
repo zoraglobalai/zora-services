@@ -13,9 +13,9 @@ const GlobalImpact: React.FC = () => {
   ];
 
   const valuePoints = [
-    "Enterprise-grade architecture designed for scalability, resilience, and security.",
+    "",
+    "Enterprise-grade architecture designed for scalability, resilience and security.",
     "AI-powered automation and analytics that improve operational efficiency and accelerate growth.",
-    "Cloud-native and future-ready platforms enabling global collaboration and digital expansion.",
   ];
 
   return (
@@ -46,18 +46,13 @@ const GlobalImpact: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-14 items-start">
           {/* ================= LEFT ================= */}
           <div className="text-center lg:text-left">
-            <h2 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-tight">
-              <span className="font-serif text-white text-[1.08em]">Intelligent Digital </span>
-              <span className="font-serif bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-600 bg-clip-text text-transparent">
-                Transformation
-              </span>
+            <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-tight bg-gradient-to-r from-[#8b5cf6] via-[#6366f1] to-[#38bdf8] bg-clip-text text-transparent drop-shadow-[0_0_18px_rgba(56,189,248,0.32)]">
+              Intelligent Digital Transformation
             </h2>
 
             <p className="mt-5 sm:mt-6 text-justify text-gray-300 text-sm sm:text-lg leading-relaxed">
-              Zora Global Technologies Pvt Ltd delivers AI-driven software,
-              enterprise platforms, and scalable digital transformation solutions
-              powered by intelligent automation frameworks enabling rapid enterprise
-              innovation.
+            Zora Global AI Technologies Pvt. Ltd. delivers cutting-edge AI-driven solutions, enterprise platforms and scalable digital transformation initiatives tailored for modern businesses.
+            Our intelligent automation frameworks enable organizations to accelerate innovation, enhance agility and maintain a competitive edge in an evolving digital landscape.
             </p>
 
             <p className="mt-4 text-justify text-gray-200 text-sm sm:text-lg leading-relaxed font-semibold">

@@ -8,6 +8,7 @@ import {
   FaYoutube,
   FaMapMarkerAlt,
 } from "react-icons/fa";
+import zoraLogo from "../assets/zora-logo-redesign.png";
 
 const Footer: React.FC = () => {
   const MAP_QUERY = "Zora Global AI Technologies Chennai";
@@ -37,7 +38,12 @@ const Footer: React.FC = () => {
           {/* 1️⃣ Company + Contact (NOW SPANS 2 COLUMNS ✅) */}
           {/* ================================================= */}
           <div className="lg:col-span-2">
-            <h2 className="text-2xl font-bold text-white mb-4">Zora Global AI</h2>
+            <img
+              src={zoraLogo}
+              alt="Zora Global AI"
+              className="mb-4 h-auto w-full max-w-[320px]"
+              loading="lazy"
+            />
 
             <p className="text-sm text-gray-400 leading-relaxed mb-6 max-w-md">
               Empowering enterprises with AI-driven solutions, cloud

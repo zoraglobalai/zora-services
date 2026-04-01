@@ -36,13 +36,13 @@ const TrustedBy: React.FC = () => {
 
       {/* ✅ Content */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        <h2 className="text-4xl sm:text-5xl font-serif font-bold text-purple-400 mb-10">
+        <h2 className="text-4xl sm:text-5xl font-serif font-bold bg-gradient-to-r from-[#8b5cf6] via-[#6366f1] to-[#38bdf8] bg-clip-text text-transparent drop-shadow-[0_0_18px_rgba(56,189,248,0.32)] mb-10">
           Trusted By Forward-Thinking Enterprises
         </h2>
 
         <p className="text-gray-200/85 max-w-3xl mx-auto mb-9 leading-snug font-serif text-lg sm:text-xl">
-          Teams that value reliability, security, and scalable engineering choose
-          us to build systems that grow with their business.
+          Teams that value reliability, security and scalable engineering choose
+          us to build systems that grow with their business
         </p>
 
         <div className="relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)] [-webkit-mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)] lg:[mask-image:none] lg:[-webkit-mask-image:none]">

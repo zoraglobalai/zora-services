@@ -11,7 +11,7 @@ const ImpactMetrics: React.FC = () => {
   return (
     <section className="py-28 px-6 bg-gradient-to-b from-[#060216] via-[#0b031f] to-[#12042a]">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-5xl md:text-6xl font-serif font-bold text-gray-300 mb-16">
+        <h2 className="text-5xl md:text-6xl font-serif font-bold bg-gradient-to-r from-[#8b5cf6] via-[#6366f1] to-[#38bdf8] bg-clip-text text-transparent drop-shadow-[0_0_18px_rgba(56,189,248,0.32)] mb-16">
           Measurable Business Impact
         </h2>
 
