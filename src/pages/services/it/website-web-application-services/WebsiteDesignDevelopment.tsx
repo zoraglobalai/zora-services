@@ -11,7 +11,7 @@ const item = {
   title: "Website Design & Development",
 };
 
-const heroImage = "/it-hero/website.jpg";
+const heroImage = "/it-hero/website.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass = accent === "purple" ? "stroke-purple-200" : "stroke-blue-200";

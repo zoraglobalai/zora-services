@@ -13,7 +13,7 @@ const item = {
     "End-to-end accounting management services for bookkeeping, financial reporting, compliance, reconciliations and audit-ready financial operations.",
 };
 
-const heroImage = "/non-it-hero/accounting-management.png";
+const heroImage = "/non-it-hero/accounting-management.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass =

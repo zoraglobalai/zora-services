@@ -42,7 +42,7 @@ const ServicesHero: React.FC = () => {
             loop
             playsInline
             preload="metadata"
-            poster="/services/it-services.jpg"
+            poster="/services/it-services.webp"
             className="h-full w-full object-cover"
             onError={() => setVideoFailed(true)}
           >
@@ -51,7 +51,7 @@ const ServicesHero: React.FC = () => {
         ) : (
           <div
             className="h-full w-full bg-cover bg-center"
-            style={{ backgroundImage: "url('/services/it-services.jpg')" }}
+            style={{ backgroundImage: "url('/services/it-services.webp')" }}
           />
         )}
       </div>

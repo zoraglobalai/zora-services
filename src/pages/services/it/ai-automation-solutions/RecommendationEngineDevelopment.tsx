@@ -11,7 +11,7 @@ const item = {
   title: "Recommendation Engine Development",
 };
 
-const heroImage = "/it-hero/recommendation.jpg";
+const heroImage = "/it-hero/recommendation.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass = accent === "purple" ? "stroke-purple-200" : "stroke-blue-200";

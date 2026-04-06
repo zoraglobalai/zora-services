@@ -13,7 +13,7 @@ const item = {
     "Talent acquisition, manpower services, operational staffing, administrative staffing and customer support hiring.",
 };
 
-const heroImage = "/non-it-hero/non-it-staff-augmentation.png";
+const heroImage = "/non-it-hero/non-it-staff-augmentation.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass =

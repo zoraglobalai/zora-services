@@ -13,7 +13,7 @@ const item = {
     "Daily transaction recording, ledger maintenance, reconciliations and structured accounting records.",
 };
 
-const heroImage = "/non-it-hero/bookkeeping-ledger-handling.png";
+const heroImage = "/non-it-hero/bookkeeping-ledger-handling.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass =

@@ -32,11 +32,11 @@ const services = [
 ];
 
 const imageMap: Record<string, string> = {
-  "business-strategy-consulting": "/non-it-hero/business-process-optimisation.png",
-  "branding-creative-services": "/non-it-hero/brand-identity-positioning.png",
-  "accounting-financial-operations": "/non-it-hero/accounting-management.png",
-  "digital-marketing-services": "/non-it-hero/lead-generation-campaigns.png",
-  "staff-augmentation-workforce-solutions": "/non-it-hero/non-it-staff-augmentation.png",
+  "business-strategy-consulting": "/non-it-hero/business-process-optimisation.webp",
+  "branding-creative-services": "/non-it-hero/brand-identity-positioning.webp",
+  "accounting-financial-operations": "/non-it-hero/accounting-management.webp",
+  "digital-marketing-services": "/non-it-hero/lead-generation-campaigns.webp",
+  "staff-augmentation-workforce-solutions": "/non-it-hero/non-it-staff-augmentation.webp",
 };
 
 const NonITServices: React.FC = () => {

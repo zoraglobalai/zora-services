@@ -13,7 +13,7 @@ const item = {
     "High-quality creative assets for marketing, branding, UI visuals and multimedia designs.",
 };
 
-const heroImage = "/non-it-hero/creative-assets-marketing-design.png";
+const heroImage = "/non-it-hero/creative-assets-marketing-design.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass =

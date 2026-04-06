@@ -13,7 +13,7 @@ const item = {
     "Balance sheets, income statements, cash flow statements, compliance reporting and analysis insights.",
 };
 
-const heroImage = "/non-it-hero/financial-reporting.png";
+const heroImage = "/non-it-hero/financial-reporting.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass =

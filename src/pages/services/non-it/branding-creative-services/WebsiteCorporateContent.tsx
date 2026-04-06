@@ -13,7 +13,7 @@ const item = {
     "SEO-optimized, brand-aligned website content that ranks higher and converts visitors into customers.",
 };
 
-const heroImage = "/non-it-hero/website-corporate-content.png";
+const heroImage = "/non-it-hero/website-corporate-content.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass =

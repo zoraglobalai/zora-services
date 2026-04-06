@@ -13,7 +13,7 @@ const item = {
     "End-to-end content management services to organize, publish, maintain and optimize digital content.",
 };
 
-const heroImage = "/non-it-hero/content-management-support.png";
+const heroImage = "/non-it-hero/content-management-support.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass = accent === "purple" ? "stroke-purple-200" : "stroke-blue-200";

@@ -11,7 +11,7 @@ const item = {
   title: "Custom Enterprise Software Development",
 };
 
-const heroImage = "/it-hero/custom-software.jpg";
+const heroImage = "/it-hero/custom-software.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass = accent === "purple" ? "stroke-purple-200" : "stroke-blue-200";

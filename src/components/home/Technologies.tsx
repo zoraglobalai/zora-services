@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import awsImage from "../../assets/amazonwebservice.png";
-import azureImage from "../../assets/microsoftazure.png";
-import gcpImage from "../../assets/googlecloudplatform.png";
-import firebaseImage from "../../assets/firebase.png";
+import awsImage from "../../assets/amazonwebservice.webp";
+import azureImage from "../../assets/microsoftazure.webp";
+import gcpImage from "../../assets/googlecloudplatform.webp";
+import firebaseImage from "../../assets/firebase.webp";
 
 const TECH_STACK = [
   { name: "Amazon Web Services", image: awsImage },
@@ -36,7 +36,7 @@ const Technologies: React.FC = () => {
       <motion.div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat will-change-transform"
         style={{
-          backgroundImage: "url('/backgrounds/technologies-bg.png')",
+          backgroundImage: "url('/backgrounds/technologies-bg.webp')",
           y: bgY,
         }}
       />

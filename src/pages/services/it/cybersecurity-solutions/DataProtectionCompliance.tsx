@@ -11,7 +11,7 @@ const item = {
   title: "Data Protection & Compliance",
 };
 
-const heroImage = "/it-hero/data-protection.jpg";
+const heroImage = "/it-hero/data-protection.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass = accent === "purple" ? "stroke-purple-200" : "stroke-blue-200";

@@ -8,7 +8,7 @@ import {
   FaYoutube,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-import zoraLogo from "../assets/zora-logo-redesign.png";
+import zoraLogo from "../assets/zora-logo-redesign.webp";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer: React.FC = () => {
@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
   const HEADQUARTERS_ADDRESS =
     "128 City Road, London, United Kingdom, EC1V 2NX";
   const OFFICE_ADDRESS =
-     "No:12,Gandhi Salai, Srinivasa Nagar, Kandhanchavadi, Perungudi, Chennai, Tamil Nadu 600096";
+     "No:12,Gandhi Salai, Srinivasa Nagar, Kandhanchavadi, Perungudi, Chennai, Tamil Nadu-600096";
 
   const LINKEDIN_URL =
     "https://www.linkedin.com/company/zora-global-ai-technologies/?viewAsMember=true";
@@ -26,13 +26,13 @@ const Footer: React.FC = () => {
   const PRODUCTS_URL = "https://www.zoraai.us/";
   const hrms_URL ="https://www.zoraai.us/products/hrms";
   const crms_URL ="https://www.zoraai.us/products/crms";
-  const orbileads_URL = "https://www.zoraai.us/products/orbileads";
-
-
-
+  const chatbot_URL = "https://www.zoraai.us/products/chat-bot";
+  const securityshield_URL ="https://www.zoraai.us/products/security-shield";
+  const emailautomation_URL = "https://www.zoraai.us/products/email-automation";
 
   const EMAIL = "info@zoraglobalai.com";
   const PHONE = "9087000345";
+  const TEl_PHONE="044-4625-4744";
   const GMAIL_COMPOSE_URL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
     EMAIL
   )}`;
@@ -48,15 +48,15 @@ const Footer: React.FC = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-14">
         {/* ✅ MAIN GRID */}
-        <div className="grid gap-12 lg:grid-cols-6 lg:gap-10">
+        <div className="grid items-start gap-12 lg:grid-cols-6 lg:gap-10">
           {/* ================================================= */}
           {/* 1️⃣ Company + Contact (NOW SPANS 2 COLUMNS ✅) */}
           {/* ================================================= */}
-          <div className="lg:col-span-2">
+          <div className="self-start lg:col-span-2">
             <img
               src={zoraLogo}
               alt="Zora Global AI"
-              className="mb-4 h-auto w-full max-w-[320px]"
+              className="-mt-3 -ml-4 mb-4 h-auto w-full max-w-[292px]"
               loading="lazy"
             />
 
@@ -108,6 +108,13 @@ const Footer: React.FC = () => {
                 <FaPhoneAlt className="text-purple-400" />
                 <span>{PHONE}</span>
               </a>
+              <a
+                href={`tel:${PHONE}`}
+                className="flex items-center gap-2 text-gray-400 hover:text-purple-400 transition"
+              >
+                <FaPhoneAlt className="text-purple-400" />
+                <span>{TEl_PHONE}</span>
+              </a>
 
               {/* ✅ Social icons (all clickable) */}
               <div className="flex items-center gap-4 pt-2">
@@ -157,7 +164,7 @@ const Footer: React.FC = () => {
           {/* ================================================= */}
           {/* 2️⃣ Links Wrapper (NOW SPANS 2 COLUMNS ✅) */}
           {/* ================================================= */}
-          <div className="grid grid-cols-3 gap-6 sm:gap-8 lg:col-span-2 lg:grid-cols-3">
+          <div className="grid grid-cols-3 gap-6 sm:gap-8 lg:col-span-2 lg:grid-cols-3 lg:pt-24">
             {/* Company */}
             <div>
               <h3 className="text-lg font-semibold text-white mb-4">Company</h3>
@@ -216,21 +223,33 @@ const Footer: React.FC = () => {
                   </a>
                 </li>
                 <li>
-                  <Link
-                    to="https://www.zoraai.us/products/workflow-automation"
-                    className="hover:text-purple-400 transition"
-                  >
-                    Messaging Applications
-                  </Link>
-                </li>
-                <li>
                   <a
-                    href={orbileads_URL}
+                    href={chatbot_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-purple-400 transition"
                   >
-                    Orbileads
+                    Chat Bot
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={emailautomation_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-purple-400 transition"
+                  >
+                    Email Automation
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={securityshield_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-purple-400 transition"
+                  >
+                    Security shield
                   </a>
                 </li>
               </ul>
@@ -273,7 +292,7 @@ const Footer: React.FC = () => {
           {/* ================================================= */}
           {/* 5️⃣ Location */}
           {/* ================================================= */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 lg:pt-24">
             <h3 className="text-lg font-semibold text-white mb-4">Location</h3>
 
             <div className="rounded-2xl overflow-hidden border border-white/10 bg-white/5">

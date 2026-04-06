@@ -11,7 +11,7 @@ const item = {
   title: "Chatbot Development",
 };
 
-const heroImage = "/it-hero/chatbot.jpg";
+const heroImage = "/it-hero/chatbot.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass = accent === "purple" ? "stroke-purple-200" : "stroke-blue-200";

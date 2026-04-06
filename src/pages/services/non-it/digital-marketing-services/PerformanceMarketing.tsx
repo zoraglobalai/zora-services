@@ -13,7 +13,7 @@ const item = {
     "Google Ads + Meta Ads campaigns to generate leads, increase conversions and maximize ROI.",
 };
 
-const heroImage = "/non-it-hero/performance-marketing.png";
+const heroImage = "/non-it-hero/performance-marketing.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass =

@@ -11,7 +11,7 @@ const item = {
   title: "Computer Vision Solutions",
 };
 
-const heroImage = "/it-hero/computer-vision.jpg";
+const heroImage = "/it-hero/computer-vision.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass = accent === "purple" ? "stroke-purple-200" : "stroke-blue-200";

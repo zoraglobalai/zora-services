@@ -9,7 +9,7 @@ const item = {
   "slug": "cross-platform-app-development",
   "title": "Cross-Platform App Development"
 };
-const heroImage = "/it-hero/cross-platform.jpg";
+const heroImage = "/it-hero/cross-platform.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass = accent === "purple" ? "stroke-purple-200" : "stroke-blue-200";

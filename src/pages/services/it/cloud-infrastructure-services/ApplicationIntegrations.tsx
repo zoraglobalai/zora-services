@@ -11,7 +11,7 @@ const item = {
   title: "Application Integrations",
 };
 
-const heroImage = "/it-hero/integrations.jpg";
+const heroImage = "/it-hero/integrations.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass = accent === "purple" ? "stroke-purple-200" : "stroke-blue-200";

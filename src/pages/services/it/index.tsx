@@ -7,13 +7,13 @@ const ITServices: React.FC = () => {
   const navigate = useNavigate();
 
   const imageMap: Record<string, string> = {
-    "website-web-application-services": "/it-hero/website.jpg",
-    "mobile-application-development": "/it-hero/android.jpg",
-    "ai-automation-solutions": "/it-hero/aiot.jpg",
-    "custom-enterprise-software": "/it-hero/custom-software.jpg",
-    "cloud-infrastructure-services": "/it-hero/infrastructure.jpg",
-    "cybersecurity-solutions": "/it-hero/data-protection.jpg",
-    "staff-augmentation-it-consulting": "/it-hero/integrations.jpg",
+    "website-web-application-services": "/it-hero/website.webp",
+    "mobile-application-development": "/it-hero/android.webp",
+    "ai-automation-solutions": "/it-hero/aiot.webp",
+    "custom-enterprise-software": "/it-hero/custom-software.webp",
+    "cloud-infrastructure-services": "/it-hero/infrastructure.webp",
+    "cybersecurity-solutions": "/it-hero/data-protection.webp",
+    "staff-augmentation-it-consulting": "/it-hero/integrations.webp",
   };
 
   useEffect(() => {
@@ -78,7 +78,7 @@ const ITServices: React.FC = () => {
                 {/* Image */}
                 <div className="relative h-48 overflow-hidden bg-black/30">
                   <img
-                    src={imageMap[cat.slug] || "/it-hero/website.jpg"}
+                    src={imageMap[cat.slug] || "/it-hero/website.webp"}
                     alt={cat.title}
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                   />

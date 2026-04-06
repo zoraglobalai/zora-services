@@ -11,7 +11,7 @@ const item = {
   title: "Cloud Migration Services",
 };
 
-const heroImage = "/it-hero/cloud-migration.jpg";
+const heroImage = "/it-hero/cloud-migration.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass = accent === "purple" ? "stroke-purple-200" : "stroke-blue-200";

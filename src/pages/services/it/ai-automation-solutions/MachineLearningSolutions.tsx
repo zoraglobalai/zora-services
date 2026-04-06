@@ -11,7 +11,7 @@ const item = {
   title: "Machine Learning Solutions",
 };
 
-const heroImage = "/it-hero/ml.jpg";
+const heroImage = "/it-hero/ml.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass = accent === "purple" ? "stroke-purple-200" : "stroke-blue-200";

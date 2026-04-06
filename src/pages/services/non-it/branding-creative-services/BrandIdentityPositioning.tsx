@@ -13,7 +13,7 @@ const item = {
     "Create distinctive, memorable and scalable brand identities with strategic positioning, visual consistency and long-term brand recognition.",
 };
 
-const heroImage = "/non-it-hero/brand-identity-positioning.png";
+const heroImage = "/non-it-hero/brand-identity-positioning.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass =

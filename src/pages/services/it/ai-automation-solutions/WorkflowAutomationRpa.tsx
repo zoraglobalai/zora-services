@@ -11,7 +11,7 @@ const item = {
   title: "Workflow Automation & RPA",
 };
 
-const heroImage = "/it-hero/rpa.jpg";
+const heroImage = "/it-hero/rpa.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass = accent === "purple" ? "stroke-purple-200" : "stroke-blue-200";

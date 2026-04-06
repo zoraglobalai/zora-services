@@ -13,7 +13,7 @@ const item = {
     "Technical SEO, on-page optimization, content strategy and ongoing SEO management for sustainable rankings.",
 };
 
-const heroImage = "/non-it-hero/seo-content-growth.png";
+const heroImage = "/non-it-hero/seo-content-growth.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass =

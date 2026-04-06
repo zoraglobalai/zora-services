@@ -13,7 +13,7 @@ const item = {
     "User-focused digital experiences that improve usability, engagement, conversions and brand perception.",
 };
 
-const heroImage = "/non-it-hero/ui-ux-creative-design.png";
+const heroImage = "/non-it-hero/ui-ux-creative-design.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass =

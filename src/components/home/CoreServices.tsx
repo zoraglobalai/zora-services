@@ -17,7 +17,7 @@ const CoreServices: React.FC = () => {
         description:
           "High-performance, scalable web solutions engineered for enterprise-grade performance and security.",
         slug: "website-web-application-services",
-        image: "/it-hero/website.jpg",
+        image: "/it-hero/website.webp",
       },
       {
         id: 2,
@@ -25,7 +25,7 @@ const CoreServices: React.FC = () => {
         description:
           "Native and cross-platform mobile applications delivering seamless user experiences across all devices.",
         slug: "mobile-application-development",
-        image: "/it-hero/android.jpg",
+        image: "/it-hero/android.webp",
       },
       {
         id: 3,
@@ -33,7 +33,7 @@ const CoreServices: React.FC = () => {
         description:
           "Intelligent automation solutions leveraging AI and machine learning to optimize business operations.",
         slug: "ai-automation-solutions",
-        image: "/it-hero/aiot.jpg",
+        image: "/it-hero/aiot.webp",
       },
       {
         id: 4,
@@ -41,7 +41,7 @@ const CoreServices: React.FC = () => {
         description:
           "Custom-built enterprise platforms designed for scalability, security and long-term business value.",
         slug: "custom-enterprise-software",
-        image: "/it-hero/crm.jpg",
+        image: "/it-hero/crm.webp",
       },
       {
         id: 5,
@@ -49,7 +49,7 @@ const CoreServices: React.FC = () => {
         description:
           "Modern cloud-native solutions enabling global collaboration, flexibility and digital expansion.",
         slug: "cloud-infrastructure-services",
-        image: "/it-hero/cloud-architecture.jpg",
+        image: "/it-hero/cloud-architecture.webp",
       },
       {
         id: 6,
@@ -57,7 +57,7 @@ const CoreServices: React.FC = () => {
         description:
           "Enterprise-grade security solutions protecting your digital assets and ensuring data integrity.",
         slug: "cybersecurity-solutions",
-        image: "/it-hero/data-protection.jpg",
+        image: "/it-hero/data-protection.webp",
       },
     ],
     []

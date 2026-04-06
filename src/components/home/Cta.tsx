@@ -11,7 +11,7 @@ const Cta: React.FC = () => {
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/backgrounds/cta-bg.png')",
+          backgroundImage: "url('/backgrounds/cta-bg.webp')",
         }}
       />
 

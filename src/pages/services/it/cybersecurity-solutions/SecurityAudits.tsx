@@ -11,7 +11,7 @@ const item = {
   title: "Security Audits",
 };
 
-const heroImage = "/it-hero/security-audit.jpg";
+const heroImage = "/it-hero/security-audit.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass = accent === "purple" ? "stroke-purple-200" : "stroke-blue-200";

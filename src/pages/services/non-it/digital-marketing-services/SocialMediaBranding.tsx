@@ -13,7 +13,7 @@ const item = {
     "End-to-end social media management services including strategy, content creation, scheduling, engagement, campaign support and analytics-driven brand growth.",
 };
 
-const heroImage = "/non-it-hero/social-media-branding.png";
+const heroImage = "/non-it-hero/social-media-branding.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass =

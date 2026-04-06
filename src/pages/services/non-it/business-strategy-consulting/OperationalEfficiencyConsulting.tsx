@@ -13,7 +13,7 @@ const item = {
     "Eliminate inefficiencies, improve productivity and build KPI-driven operational systems for sustainable business growth.",
 };
 
-const heroImage = "/non-it-hero/operational-efficiency-consulting.png";
+const heroImage = "/non-it-hero/operational-efficiency-consulting.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass = accent === "purple" ? "stroke-purple-200" : "stroke-blue-200";

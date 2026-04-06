@@ -11,7 +11,7 @@ const item = {
   title: "Threat Monitoring",
 };
 
-const heroImage = "/it-hero/threat-monitoring.jpg";
+const heroImage = "/it-hero/threat-monitoring.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass = accent === "purple" ? "stroke-purple-200" : "stroke-blue-200";

@@ -5,25 +5,25 @@ const EnterpriseDifferentiators: React.FC = () => {
     {
       title: "Board-Level AI Strategy",
       desc: "We align artificial intelligence initiatives with executive business outcomes",
-      image: "/it-hero/aiot.jpg",
+      image: "/it-hero/aiot.webp",
       tag: "Strategy",
     },
     {
       title: "Security-First Architecture",
       desc: "Built with enterprise-grade compliance, data encryption and infrastructure resilience",
-      image: "/it-hero/data-protection.jpg",
+      image: "/it-hero/data-protection.webp",
       tag: "Security",
     },
     {
       title: "Scalable AI Infrastructure",
       desc: "Cloud-native, modular systems designed for long-term digital growth",
-      image: "/it-hero/cloud-architecture.jpg",
+      image: "/it-hero/cloud-architecture.webp",
       tag: "Scalability",
     },
     {
       title: "Data-Driven Decision Intelligence",
       desc: "Real-time insights and predictive analytics that improve strategic and operational outcomes",
-      image: "/it-hero/ml.jpg",
+      image: "/it-hero/ml.webp",
       tag: "Insights",
     },
   ];

@@ -39,7 +39,7 @@ const Leadership: React.FC = () => {
             <div className="relative w-44 h-44 mx-auto mb-8 flex items-center justify-center">
               <div className="absolute inset-0 bg-purple-600/35 blur-2xl rounded-full" />
               <img
-                src="/founders/md.jpg"
+                src="/founders/md.webp"
                 alt="Managing Director"
                 className="w-full h-full object-cover object-center rounded-full border border-purple-500/40 shadow-[0_0_25px_rgba(124,58,237,0.35)] relative"
               />
@@ -99,7 +99,7 @@ const Leadership: React.FC = () => {
             <div className="relative w-44 h-44 mx-auto mb-8 flex items-center justify-center pl-4">
               <div className="absolute inset-0 bg-purple-600/35 blur-2xl rounded-full" />
               <img
-                src="/founders/ceo.jpg"
+                src="/founders/ceo.webp"
                 alt="CEO"
                 className="w-full h-full object-cover object-left rounded-full border border-purple-500/40 shadow-[0_0_25px_rgba(124,58,237,0.35)] relative"
               />

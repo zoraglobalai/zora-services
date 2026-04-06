@@ -11,7 +11,7 @@ const item = {
   title: "CRM Services",
 };
 
-const heroImage = "/it-hero/crm.jpg";
+const heroImage = "/it-hero/crm.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass = accent === "purple" ? "stroke-purple-200" : "stroke-blue-200";

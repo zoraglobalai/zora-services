@@ -13,7 +13,7 @@ const item = {
     "Strategic consulting services that help businesses optimize operations, improve efficiency, streamline decision-making and build sustainable long-term growth through structured planning and performance-focused execution.",
 };
 
-const heroImage = "/non-it-hero/business-process-optimisation.png";
+const heroImage = "/non-it-hero/business-process-optimisation.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass = accent === "purple" ? "stroke-purple-200" : "stroke-blue-200";

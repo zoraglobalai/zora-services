@@ -13,7 +13,7 @@ const item = {
     "Strategy-led experience approach to drive better product journeys, clarity and conversion-ready design direction.",
 };
 
-const heroImage = "/non-it-hero/lead-generation-campaigns.png";
+const heroImage = "/non-it-hero/lead-generation-campaigns.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass =

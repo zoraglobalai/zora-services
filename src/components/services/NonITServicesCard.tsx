@@ -12,7 +12,7 @@ const NonITServicesCard: React.FC = () => {
           {/* ✅ IMAGE FIRST ON MOBILE */}
           <div className="order-1 md:order-1 h-[260px] sm:h-[320px] md:h-[380px] rounded-3xl overflow-hidden border border-purple-600/30 shadow-inner relative">
             <img
-              src="/services/non-it-services.jpg"
+              src="/services/non-it-services.webp"
               alt="Non IT Services"
               className="w-full h-full object-cover"
             />

@@ -129,7 +129,7 @@ const ContactPage: React.FC = () => {
             "@type": "LocalBusiness",
             name: "Zora Global AI",
             url: "https://www.zoraglobalai.com",
-            logo: "https://www.zoraglobalai.com/logo.png",
+            logo: "https://www.zoraglobalai.com/logo.webp",
             email: "info@zoraglobalai.com",
             telephone: "+91-9087000345",
             address: {

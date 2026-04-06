@@ -13,7 +13,7 @@ const item = {
     "Billing, e-invoicing, invoice processing, accounts payable and receivable workflows for healthy cash flow.",
 };
 
-const heroImage = "/non-it-hero/financial-operations-support.png";
+const heroImage = "/non-it-hero/financial-operations-support.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass = accent === "purple" ? "stroke-purple-200" : "stroke-blue-200";

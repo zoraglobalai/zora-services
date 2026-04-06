@@ -1,6 +1,6 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import zoraLogo from "../assets/zora-logo-redesign.png";
+import zoraLogo from "../assets/zora-logo-redesign.webp";
 
 const Navbar: React.FC = () => {
   const location = useLocation();

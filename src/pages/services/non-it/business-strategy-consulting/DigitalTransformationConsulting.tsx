@@ -13,7 +13,7 @@ const item = {
     "Modernize processes and technology ecosystems through strategy, cloud, automation, data and AI initiatives.",
 };
 
-const heroImage = "/non-it-hero/digital-transformation-consulting.png";
+const heroImage = "/non-it-hero/digital-transformation-consulting.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass = accent === "purple" ? "stroke-purple-200" : "stroke-blue-200";

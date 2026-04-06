@@ -9,7 +9,7 @@ const item = {
   "slug": "android-app-development",
   "title": "Android App Development"
 };
-const heroImage = "/it-hero/android.jpg";
+const heroImage = "/it-hero/android.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass = accent === "purple" ? "stroke-purple-200" : "stroke-blue-200";

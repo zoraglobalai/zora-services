@@ -11,7 +11,7 @@ const item = {
   title: "IT Staff Augmentation",
 };
 
-const heroImage = "/it-hero/staff-augmentation.jpg";
+const heroImage = "/it-hero/staff-augmentation.webp";
 
 const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
   const strokeClass = accent === "purple" ? "stroke-purple-200" : "stroke-blue-200";
